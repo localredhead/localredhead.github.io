@@ -1,111 +1,153 @@
+$colour: #FFFAF8;//#FFFAF8;//#F6F1ED;//#F5F0EB;//#FFF6EC;
+$highlight: #B28F6B;
+$ss: sans-serif;
+$s: serif;
+$arvo: 'Arvo', $s, $ss;
+$alegra: 'Alegreya Sans',$ss;
+$slab: 'Josefin Slab', $s, $ss;
+$vollkorn: 'Vollkorn', $s, $ss;
+
 body {
-  font-family:'Josefin Slab',Helvetica,Arial,sans-serif;
-  font-weight:400;
-  background-color: #FFF6EC;
+  font-family: $alegra;
+  background-color: $colour;
+  font-size: 16px;
 }
 
 .button {
-  font-family:'Raleway',Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-family: $arvo;
 }
 
 .button-group li {
-  padding-top:3%;
+  padding-top: 3%;
 }
 
 .button-group a {
-  color:rgba(0,0,0,1);
+  color: rgba(0,0,0,1);
   background-color:transparent;
 }
 
 .button-group a:hover {
-  color:rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.4);
   background-color:transparent;
 }
 
 .button-group {
-  float:none;
-} @media only screen and (min-width: 40.063em) {
+  float: none;
+}
+
+@media only screen and (min-width: 40.063rem) {
   .button-group{ float: right; }
 }
 
 .namelogo {
-  padding:20px 10px 0px 10px;
-} @media only screen and (min-width: 40.063em) {
+  padding: 20px 10px 0px 10px;
+}
+
+@media only screen and (min-width: 40.063rem) {
   namelogo {
     padding-bottom: 20px;
   }
 }
 
 .namelogo h1 {
-  font-size:1.5em;
-  font-weight:600;
-  text-align:center;
-  font-family:'Vollkorn',Helvetica,Arial,sans-serif;
-} @media only screen and (min-width: 40.063em) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: $slab;
+}
+
+@media only screen and (min-width: 40.063rem) {
   .namelogo h1 {
-    font-size:24px;
-    text-align:left;
+    font-size: 2.0rem;
+    text-align: left;
   }
-} @media only screen and (min-width: 64.063em) {
+}
+
+@media only screen and (min-width: 64.063rem) {
   .namelogo h1 {
-    font-size:33px;
-    text-align:left;
+    font-size: 2.2rem;
+    text-align: left;
   }
 }
 
 .hero {
-  background: url("https://lh6.googleusercontent.com/IXfno_xLQCOP8gx4BUIzObjIq1wTHEHKZw93KvbFfQI=w2228-h1210-no");
-  background-size: cover;
-  background-position: 50%;
-  box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.15);
-  height: 22%;
-} @media only screen and (min-width: 40.063em) {
+  background-origin: content-box;
+  background: url("https://lh3.googleusercontent.com/wFb2Ghvi6nHJmZSn-Ic-_ysUJKexj0-fLPOBt6DyrTs=w1072-h1430-no");
+                 //old but good don't remove
+                 //background: url("https://lh3.googleusercontent.com/-pa3Iirc1cQU/TB052kfkIAI/AAAAAAAAD64/HXbi0LSmisI/w1006-h1342-no/2010-06-06%2B16.46.32.jpg");
+  background-size: 100vw 100vh;
+  background-position: 50% 80%;
+  height: 25vh;
+}
+
+@media only screen and (min-width: 40.063rem) {
   .hero {
-   height: 28%; 
+    height: 30vh;
+    background-size: 100% auto;
   }
-} @media only screen and (min-width: 70.063em) {
+}
+
+@media only screen and (min-width: 64.063rem) {
   .hero {
-    height: 35%;
+    height: 30vh;
+    background-size: 100% auto;
   }
 }
 
 .intro-text {
-  padding-top: 0%;
-  color:rgba(255,255,255,1);
+  color: $colour;
+  text-shadow: -1px -1px 2px #B28F6B, 1px 1px 2px #B28F6B;
   text-align: center;
-} @media only screen and (min-width: 40.063em) {
-  .intro-text {
-    padding-top: 2%;
-  }
-} @media only screen and (min-width: 70.063em) {
-  .intro-text {
-    padding-top: 2%;
-  }
-}
-
-.intro-text p {
-  font-family:'Shadows Into Light', cursive;
-  font-size: 18px;
-} @media only screen and (min-width: 40.063em) {
-  .intro-text p {
-    font-size: 20px;
-  }
-} @media only screen and (min-width: 70.063em) {
-  .intro-text p {
-    font-size: 33px;
+  p {
+    font-family:'Shadows Into Light', cursive;
+    font-size: calc(.75rem + 1vw);
+    font-size: calc(.75rem + 1vh);
+    font-weight: 600;
+    padding-bottom: 5%;
+    padding-top: 5%;
   }
 }
 
-.about,.work {
-  padding:20px 0 0 0;
+// @media only screen and (min-width: 40.063rem) {
+//   .intro-text {
+//     padding-top: 1%;
+//   }
+// }
+
+// @media only screen and (min-width: 64.063rem) {
+//   .intro-text {
+//     padding-top: 1%;
+//   }
+// }
+
+@media only screen and (min-width: 40.063rem) {
+  .intro-text p {
+    padding-top: 2%;
+    font-size: calc(1rem + 2vw);
+    font-size: calc(1rem + 2vh);
+  }
+}
+
+@media only screen and (min-width: 64.063rem) {
+  .intro-text p {
+    padding-top: 2%;
+    font-size: calc(1rem + 2vw);
+    font-size: calc(1rem + 2vh);
+  }
+}
+
+.about, .work {
+  font-size: 1.5rem;
+  padding:30px 0 0 0;
 }
 
 .about img {
-  width:200px;
-  height:200px;
+  width:10rem;
+  height:10rem;
   border-radius:150px;
-  -webkit-border-radius:150px;
-  -moz-border-radius:150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
 }
 
 .work img:hover {
@@ -132,12 +174,17 @@ hr {
   opacity:0.8;
 }
 
-.contact img {
-  width: 60px;
-  height: 60px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
+.contact {
+  /* font-weight: 400; */
+  font-family: $alegra;
+  text-align: center;
+  img {
+    width: 60px;
+    height: 60px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px; 
+  }
 }
 
 footer {
@@ -148,3 +195,11 @@ footer a:hover {
   color:rgba(0,0,0,0.4);
   background-color:transparent;
 }
+
+.highlight {
+  box-shadow: 2px 2px 2px $highlight;
+  -moz-box-shadow: 2px 2px 2px $highlight;
+	-webkit-box-shadow: 2px 2px 2px $highlight;
+}
+
+// http://jsfiddle.net/Rpdr9/  # study this for viewport
