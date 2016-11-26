@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
 /******************************************************
  * I copied these styles from markdotto.com, who is
  * the creator of bootstrap, and I also did some
@@ -42,14 +45,9 @@ html {
 }
 body {
   padding: 20px;
-  font-family: "Alegreya Sans", sans-serif;
-  /* font-family: "Helvetica Nee",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",sans-serif; */
-  /*Menlo, Monaco, monospace*/
+  font-family: 'Work Sans', sans-serif;
   font-size: 16px;
-  /* line-height: 1.5; */
   color: #53868b;
-  /* color: #f0fff0; */
-  /* background-color: #1090c0; */
   background-color: #FFFAF8;
 }
 p {
@@ -71,14 +69,13 @@ h1, h2, h3, h4{
   margin: 30px 0 20px;
   font-weight: bold;
   line-height: 1.1;
-  color:  #2e8b57;
-  /* color: #ffaa00; */
+  color: #cdb7b5;
   text-rendering: optimizeLegibility;
 }
 h2:before, h3:before, h4:before {
                         position: absolute;
                         top: auto;
-                        color: #698b69;
+                        color: #8b7d7b;
                         display: inline;
                       }
 h2:before {
@@ -109,7 +106,7 @@ i, em, b, strong {
 }
 b, strong {
   font-weight: bold;
-  color: #00ffff;
+  color: #528b8b;
 }
 b:before, b:after, strong:before, strong:after {
                                     content: "*";
@@ -127,20 +124,19 @@ ul, ol {
   margin: 0 0 20px;
 }
 code, pre {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 0.9em;
 }
 .underline {
   text-decoration: underline;
-  color: #3aff3a;
+  color: #528b8b;
 }
 .underline:before, .underline:after {
                      content: "_";
-                     color: #3aff3a;
+                     color: #528b8b;
                    }
 code {
   background: #4f4f4f;
-  /* background: #008f0f; */
   border-radius: 5px;
   color: #ffa0f0;
 }
@@ -177,7 +173,6 @@ pre.src:before {
 pre.src:hover:before {
   display: inline;
   background-color: #4f4f4f;
-  /* background-color: #000000; */
   border: 1px solid #e1e1e8;
 }
 pre.src-sh:before    { content: 'sh'; }
@@ -190,10 +185,10 @@ pre.src-matlab:before  { content: 'matlab'; }
 pre.src-maxima:before  { content: 'maxima'; }
 pre.src-lisp:before   { content: 'common lisp'; }
 pre.src-ruby:before { content: 'ruby'; }
+pre.src-orgmode:before { conten: 'orgmode'; }
 
 pre.example {
-  background: #4f4f4f;
-  /* background-color: #008f0f; */
+  background-color: #4f4f4f;
   color: #ffa0f0;
 }
 
@@ -222,7 +217,7 @@ span img{
 a {
   font-weight: inherit;
   line-height: inherit;
-  color: #3cb371;
+  color: #8fbc8f;
   text-decoration: none;
 }
 sup a:before {
@@ -233,7 +228,7 @@ sup a:after {
 }
 a:hover {
   text-decoration: underline;
-  color: #8fbc8f;
+  color: #3cb371;
 }
 table {
   line-height: 2.5;
@@ -262,16 +257,16 @@ table th.right, table td.right {
 }
 /* head */
 .masthead {
-  color: #2e8b57;
+  color: #cdb7b5;
   border-bottom: 1px solid #e2e3e4;
 }
 
 .masthead a {
-  color: #3cb371;
+  color: #5f9ea0;
 }
 .masthead a:hover {
   text-decoration: underline;
-  color: #8fbc8f;
+  color: #53868b;
 }
 .masthead ul {
   list-style: none;
@@ -283,7 +278,7 @@ table th.right, table td.right {
 .masthead li + li:before {
   display: inline-block;
   content: "\00B7 \00a0";
-  color: #6495ed;
+  color: #8b7d7b;
 }
 
 /*site-nav*/
@@ -302,7 +297,7 @@ table th.right, table td.right {
 #searchform #s {
   background: url("/media/img/search.png") no-repeat 5px 6px;
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
-  border: 1px solid #dfd;
+  border: 1px solid #eed5d2;
   border-radius: 2px;
   -moz-border-radius: 2px;
   width: 90px;
@@ -326,10 +321,14 @@ table th.right, table td.right {
 }
 .masthead img.avatar {
   position: absolute;
-  width: 200px;
-  top: 100px;
-  right: 29%;
+  width: 120px;
+  height: 120px;
+  top: 30px;
+  right: 47%;
   background-color: #fff;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
 }
 /* post */
 .post {
@@ -346,7 +345,7 @@ table th.right, table td.right {
 .post ul > li:before {
   content: "- ";
   margin-left: -0.25em;
-  color: ##6495ed;
+  color: #cdb7b5;
 }
 .post .org-ul-up > li:before {
   content: "";
@@ -376,7 +375,7 @@ table th.right, table td.right {
 .post ol > li:before {
   content: counter(o-list) ") ";
   counter-increment: o-list;
-  color: #6495ed;
+  color: #cdb7b5;
 }
 
 /* special for li in pre */
@@ -392,7 +391,7 @@ table th.right, table td.right {
 .post-info {
   display: inline-block;
   margin: -10px 0 -10px;
-  color: #53868b;
+  color: #5f9ea0;
 }
 .post-info + .post-info:before {
   content: "\2223 \00a0";
@@ -420,7 +419,6 @@ table th.right, table td.right {
 }
 
 #table-of-contents h2 {
-
   max-width: 20em;
   font-weight: normal;
   padding-left: 0.5em;
@@ -480,10 +478,9 @@ table th.right, table td.right {
 /* site-nav*/
 @media screen and (max-width: 512px) {
   .site-nav {border-top: 1px solid #e8e8e8; text-align: left; }
-  .site-nav .menu-icon { display: block; width: 36px; height: 21px; line-height: 0; margin-top: 10px; margin-bottom: 5px; text-align: center;
-                       }
+  .site-nav .menu-icon { display: block; width: 36px; height: 21px; line-height: 0; margin-top: 10px; margin-bottom: 5px; text-align: center;}
   .site-nav .menu-icon > svg { width: 18px; height: 15px; }
-  .site-nav .menu-icon > svg path { fill: #ffff00; }
+  .site-nav .menu-icon > svg path { fill: #ffff00;}
   .site-nav .trigger { clear: both; display: none; }
   .site-nav:hover .trigger { display: block; padding-bottom: 5px; }
   .site-nav li{ display: block; padding: 5px 10px; }

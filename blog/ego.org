@@ -1,0 +1,82 @@
+#+TITLE:       Switching from Middleman to EGO for static-site generation.
+#+AUTHOR:      Levi Strope
+#+EMAIL:       levi.strope@gmail.com
+#+DATE:        2016-11-26 Fri
+
+#+URI:         /blog/%y/%m/%d/ego
+#+TAGS:        emacs, org-mode
+#+DESCRIPTION: If you're reading this, you're probably very bored.
+
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:t f:t *:t <:t
+
+** Motivation
+
+*** I want a simple way to produce blog content.
+I have used middleman (ruby) and cryogen (clojure), but they require a lot of configuration.  At the end of the day I just want to create content.
+
+The endless configuration options is just slowing me down so I needed to change how I published my site and its content.
+
+*** I found a number of org-mode blog solutions
+
+Historically there has been a couple of well-documented solutions for blogging with org-mode but I always found them lacking.  Many are included at [[http://orgmode.org/worg/org-blog-wiki.html][Org-blog-wiki]].
+
+There are three that stand out:
++ o-blog :: The link of o-blog pointed to the v1 version, but the v2 version did not seem much better.
++ org-page :: allows me to generate a site from my org notes!
++ nikola :: Nikola is awesome but it is a third-party dependency.  I needed simpler.
+
+I gravitated towards the simplicity of org-page because all I need is emacs and I wanted to use org-mode for content.  Unfortunately *org-page* is lacking in some explanation of options so I began searching.
+
+- https://github.com/kelvinh/org-page/blob/master/doc/quick-guide.org :: This was crucial to configuring org-page.
+- http://kuangdash.github.io/blog/2015/04/15/org-page%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/  :: More configuration notes for org-page.  Needs translation.
+- http://tumashu.github.io/org-webpage/ :: org-webpage looks slightly more robust, uses org-page underneath.
+- http://emacs-china.github.io/EGO/ :: EGO incorporates org-webpage and org-page, and it has decent documentation!
+
+** Execution: ~M-x package-install ego~
+
+Choosing EGO I whipped together the requisite emacs configuration:
+
+#+BEGIN_SRC emacs-lisp
+(require 'ego)
+(ego-add-to-alist 'ego-project-config-alist
+                  `(("localredhead"
+                     :repository-directory "~/Projects/localredhead.github.io"
+                     :repository-org-branch "source" ;
+                     :repository-html-branch "master" ;
+                     :site-domain "https://levistrope.com"
+                     :site-main-title "Levi Strope"
+                     :site-sub-title "entropy in action"
+                     :theme (mashmellow)
+                     :summary (("years" :year :updates 10))
+                     :source-browse-url ("Github" "https://github.com/localredhead")
+                     :personal-avatar "https://media.licdn.com/media/p/6/005/095/364/3fd9ba3.jpg"
+                     :confound-email t
+                     :ignore-file-name-regexp "readme.org"
+                     :category-ignore-list ("themes" "assets" "notes"))))
+#+END_SRC
+
+EGO considers each directory in your root to be a category so whitelist any folders you want to ignore for publishing.  EGO looks for themes in the local root first so I placed my theme *mashmellow* in the themes folder.
+
+Once I had the documents ready, previewing and deploying was a breeze via
++ ~M-x ego-test-current-page~
++ ~M-x ego-do-publication~
+
+Example index page:
+#+BEGIN_SRC orgmode
+#+TITLE:
+#+AUTHOR:      Levi Strope
+#+EMAIL:       levi.strope@gmail.com
+#+URI:         /
+#+DESCRIPTION: Personal website of Levi Strope
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+
+Hello!
+
+I live, work, and sometimes sleep in San Franscisco :)
+
+This web space will be dedicated to my geekery and anything that interests
+#+END_SRC
+
+The about page is about as sparse.  I finally started my journing learning org-mode and the byproduct of that was this site :)
