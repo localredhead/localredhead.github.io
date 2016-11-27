@@ -33,6 +33,7 @@ I gravitated towards the simplicity of org-page because all I need is emacs and 
 
 ** Execution: ~M-x package-install ego~
 
+
 Choosing EGO I whipped together the requisite emacs configuration:
 
 #+BEGIN_SRC emacs-lisp
