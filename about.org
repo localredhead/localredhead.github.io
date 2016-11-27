@@ -8,5 +8,7 @@
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 
+#+BEGIN_CENTER
 | [[https://www.linkedin.com/in/localredhead/en][LinkedIn]]                                                                     | [[https://github.com/localredhead][GitHub]]                                                     | [[https://twitter.com/localredhead][Twitter]]                                                                           |
 | [[https://media.licdn.com/mpr/mpr/shrinknp_500_500/p/6/005/095/364/3fd9ba3.jpg]] | [[https://octodex.github.com/images/daftpunktocat-thomas.gif]] | [[https://pbs.twimg.com/profile_images/483392854/cloak_and_10101s_thumb_400x400.gif]] |
+#+END_CENTER
