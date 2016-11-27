@@ -13,3 +13,6 @@ Hello!
 I live, work, and sometimes sleep in San Franscisco :)
 
 This web space will be dedicated to my geekery and anything that interests me.
+
+
+.
