@@ -1,11 +1,10 @@
-#+TITLE:
+#+TITLE:       Home
 #+AUTHOR:      Levi Strope
 #+EMAIL:       levi.strope@gmail.com
 #+DATE:        2016-11-25 Thurs
-
 #+URI:         /
 #+DESCRIPTION: Personal website of Levi Strope
-
+#+TAGS:        home
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 
