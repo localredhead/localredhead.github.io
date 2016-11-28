@@ -94,22 +94,22 @@ p {
 
 h1 {
   color: var(--head-color);
-  font-size:28px;
+  font-size:24px;
 }
 
 h2 {
   color: var(--head-color);
-  font-size:24px;
+  font-size:21px;
 }
 
 h3 {
   color: var(--sect-color);
-  font-size:21px;
+  font-size:18px;
 }
 
 h4 {
   color: var(--head-color);
-  font-size:18px;
+  font-size:16px;
 }
 
 h1, h2, h3, h4 {
