@@ -19,11 +19,11 @@
 
 */
 
-/* My apologies for the names but these
- * will make it easier to customize the scheme.
- */
-
 :root {
+/**********************************************
+ * My apologies for the names but these
+ * will make it easier to customize the scheme.
+ **********************************************/
   --sifi-color: #ffff00;
   --main-color: #53868b;
   --foot-color: #5f9ea0;
@@ -34,7 +34,7 @@
   --head-color: #2f4f4f;
   --cdbg-color: #4f4f4f;
   --cdft-color: #ffa0f0;
-  --cdem-color: #cfc;
+  --cdem-color: #4f4f4f; /* make this the same as cdbg to hide code emphasis */
   --sili-color: #cfc;
   --srch-color: #eed5d2;
   --plii-color: #cdb7b5;
@@ -43,15 +43,15 @@
   --link-color: #8fbc8f;
   --pobg-color: #008f0f;
   --ahov-color: #3cb371;
+  --mabg-color: #FFFFFF; /* more whites than a Trump rally */
+  --scbg-color: #FFFFFF;
+  --body-color: #FFFAF8;
+  --goog-color: #f9f9f9;
   --mabo-color: #e2e3e4;
   --pobo-color: #e2e3e4;
-  --body-color: #FFFAF8;
-  --mabg-color: #FFFFFF;
-  --scbg-color: #FFFFFF;
   --blqt-color: #e5e5e5;
   --hrln-color: #e2e3e4;
   --pree-color: #e1e1e8;
-  --goog-color: #f9f9f9;
   --sina-color: #e8e8e8;
   --sceh-color: #e1e1e8;
   --tabo-color: #e1e1e8;
