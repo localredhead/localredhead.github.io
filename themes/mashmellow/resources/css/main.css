@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
 /******************************************************
  *
  * These edits of the edits of the original are called: "Mashmellow"
@@ -23,7 +24,6 @@
  */
 
 :root {
-  --firs-color: #blue;
   --sifi-color: #ffff00;
   --main-color: #53868b;
   --foot-color: #5f9ea0;
@@ -46,7 +46,8 @@
   --mabo-color: #e2e3e4;
   --pobo-color: #e2e3e4;
   --body-color: #FFFAF8;
-  --mabg-color: #FFF;
+  --mabg-color: #FFFFFF;
+  --scbg-color: #FFFFFF;
   --blqt-color: #e5e5e5;
   --hrln-color: #e2e3e4;
   --pree-color: #e1e1e8;
@@ -54,11 +55,11 @@
   --sina-color: #e8e8e8;
   --sceh-color: #e1e1e8;
   --tabo-color: #e1e1e8;
-  --scbg-color: #white;
   --preb-color: #000000;
-  --sceb-color: #black;
-  --tabg-color: #black;
+  --sceb-color: #000000;
+  --tabg-color: #000000;
   --grey-color: #777777;
+  --firs-color: #blue;
 }
 
 * {
@@ -393,7 +394,6 @@ table th.right, table td.right {
   height: 30px;
   line-height: 12px;
   padding: 4px 10px 4px 28px;
-
   -webkit-transition-duration: 400ms;
   -webkit-transition-property: width, background;
   -webkit-transition-timing-function: ease;
@@ -421,6 +421,7 @@ table th.right, table td.right {
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
 }
+
 /* post */
 .post {
   position: relative;
@@ -504,10 +505,10 @@ table th.right, table td.right {
 
 /* table of content */
 #table-of-contents {
+  background-color: var(--tabg-color);
   position: fixed;
   right: 0em;
   top: 0em;
-  background: #black;
   border:1px solid var(--tabo-color);
   -webkit-box-shadow: 0 0 1em var(--grey-color);
   -moz-box-shadow: 0 0 1em var(--grey-color);
@@ -577,6 +578,7 @@ table th.right, table td.right {
 }
 
 /* Responsive -------------------------------------------------- */
+
 /* site-nav*/
 @media screen and (max-width: 512px) {
   .site-nav { border-top: 1px solid var(--sina-color); text-align: left; }
