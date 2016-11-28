@@ -12,17 +12,15 @@
 
 ** I want a simple way to produce blog content.
 I have used middleman (ruby) and cryogen (clojure), but they require a lot of configuration.  At the end of the day I just want to create content.
-1.
-1.
-1.
 
-*** The endless configuration options is just slowing me down so I needed to change how I published my site and its content.
+The endless configuration options is just slowing me down so I needed to change how I published my site and its content.
+
 
 ** I found a number of org-mode blog solutions
 Historically there has been a couple of well-documented solutions for blogging with org-mode but I always found them lacking.  Many are included at [[http://orgmode.org/worg/org-blog-wiki.html][Org-blog-wiki]].
 
 ** There are three that stand out:
-**** o-blog :: The link of o-blog pointed to the v1 version, but the v2 version did not seem much better.
++ o-blog :: The link of o-blog pointed to the v1 version, but the v2 version did not seem much better.
 + org-page :: allows me to generate a site from my org notes!
 + nikola :: Nikola is awesome but it is a third-party dependency.  I needed simpler.
 
