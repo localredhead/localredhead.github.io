@@ -3,11 +3,11 @@
 
 /******************************************************
  *
- * These edits of the edits of the original are called: "Mashmellow"
+ *       These edits are called: "Mashmellow"
  *
  *****************************************************/
 
-/*  -- Thanks to the the original author:
+/*-- Thanks to the the original author:
                         __
    __                  /\ \
   /'_`\_    ___ ___    \_\ \    ___
@@ -20,33 +20,30 @@
 */
 
 :root {
-/**********************************************
- * My apologies for the names but these
- * will make it easier to customize the scheme.
- **********************************************/
-  --sifi-color: #ffff00;
-  --main-color: #53868b;
-  --foot-color: #5f9ea0;
-  --post-color: #5f9ea0;
-  --mlnk-color: #5f9ea0;
-  --ulin-color: #528b8b;
-  --bold-color: #528b8b;
-  --head-color: #2f4f4f;
-  --cdbg-color: #4f4f4f;
-  --cdft-color: #ffa0f0;
-  --cdem-color: #4f4f4f; /* make this the same as cdbg to hide code emphasis */
-  --sili-color: #cfc;
-  --srch-color: #eed5d2;
-  --plii-color: #cdb7b5;
-  --mast-color: #cdb7b5;
+  --sifi-color: #ffff00; /* table of contents                                  */
+  --main-color: #53868b; /* body text                                          */
+  --foot-color: #5f9ea0; /* footer text                                        */
+  --post-color: #5f9ea0; /* post meta-data text                                */
+  --mlnk-color: #68838b; /* navigation heading/link text                       */
+  --ulin-color: #528b8b; /* same as body to hide underline emphasis characters */
+  --bold-color: #528b8b; /* anything with emphasis                             */
+  --head-color: #668b8b; /* title text                                         */
+  --cdbg-color: #4f4f4f; /* code background color (zenburn)                    */
+  --cdem-color: #4f4f4f; /* same as cdbg to hide code emphasis characters      */
+  --srch-color: #eed5d2; /* search border                                      */
+  --plii-color: #cdb7b5; /* post list item bullet                              */
+  --sect-color: #cdb7b5; /* h2, h3 headings.  Section text.                    */
+  --mast-color: #cdb7b5; /* sub-title text                                     */
   --mali-color: #8b7d7b;
-  --link-color: #8fbc8f;
-  --pobg-color: #008f0f;
+  --cdft-color: #ffa0f0; /* code font color                                    */
   --ahov-color: #3cb371;
-  --mabg-color: #FFFFFF; /* more whites than a Trump rally */
+  --pobg-color: #008f0f;
+  --link-color: #8fbc8f;
+  --sili-color: #cfc;
+  --mabg-color: #FFFFFF; /* more whites than a Trump rally                     */
   --scbg-color: #FFFFFF;
   --body-color: #FFFAF8;
-  --goog-color: #f9f9f9;
+  --goog-color: #f9f9f9; /* search textbox color                               */
   --mabo-color: #e2e3e4;
   --pobo-color: #e2e3e4;
   --blqt-color: #e5e5e5;
@@ -90,24 +87,29 @@ p {
 }
 
 .title {
+  color: var(--head-color);
   margin-bottom: 20px;
   text-align: center;
 }
 
 h1 {
+  color: var(--head-color);
   font-size:28px;
 }
 
 h2 {
+  color: var(--head-color);
   font-size:24px;
 }
 
 h3 {
-  font-size:20px;
+  color: var(--sect-color);
+  font-size:21px;
 }
 
 h4 {
-  font-size:16px;
+  color: var(--head-color);
+  font-size:18px;
 }
 
 h1, h2, h3, h4 {
@@ -115,7 +117,6 @@ h1, h2, h3, h4 {
   margin: 30px 0 20px;
   font-weight: bold;
   line-height: 1.1;
-  color: var(--head-color);
   text-rendering: optimizeLegibility;
 }
 
@@ -127,21 +128,21 @@ h2:before, h3:before, h4:before {
                       }
 h2:before {
   content: "*";
-  left: -2.5em;
-}
-
-h2 {left: -2.5em;}
-
-h3:before {
-  content: "**";
   left: -2em;
 }
 
-h3 {left: -2em;}
+h2 {left: -2em;}
+
+h3:before {
+  content: "**";
+  left: -1.5em;
+}
+
+h3 {left: -1.5em;}
 
 h4:before {
   content: "***";
-  left: -1.25em;
+  left: -1.45em;
 }
 
 h4 {left: -1.25em;}
