@@ -1,0 +1,34 @@
+#+TITLE:       Tips for blogging with org-mode and EGO
+#+AUTHOR:      Levi Strope
+#+EMAIL:       levi.strope@gmail.com
+#+DATE:        2016-11-28 Mon
+
+#+URI:         /blog/%y/%m/%d/tips-for-blogging-with-org-mode
+#+TAGS:        EGO, org-mode, blogging, writing, CSS
+#+DESCRIPTION: Using EGO with Org-mode to generate static content, without emphasis symbols _ = / * and leading stars *
+
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+
+There were a few things that annoyed me with org-mode.  I considered one of them a deal-killer: _all org-mode emphasis characters were exported too_.
+
+These characters wrapped all text that had emphasis, like *bold*, _underline_, /italics/, ~code~, +strike-through+.  Each of these still has annoying spacing, but the special characters are gone!
+
+Before I found a solution I tried everything I could think of; pouring over org-mode manuals and even cracking open the source-code of [[https://github.com/emacs-china/EGO][EGO]].  No matter what I tried the offending characters would still export to HTML.
+
+This exercise was not completely fruitless, as I stumpled upon a way to remove them when I realized how emacs and org-mode itself hides the characters.
+
+**** Pro Tip: *Modify the CSS to hide the offending characters.*
+
+For instance, to remove leading stars:
+
+#+BEGIN_SRC css
+b:before, b:after, strong:before, strong:after {
+                                    content: "*";
+                                    color: var(--body-color);
+                                  }
+#+END_SRC
+
+In the example I am setting the color to be the same as the body color.
+
+At first I thought this was a smelly hack but I arrived at this solution after turning them off in emacs, which uses this same technique.  I did not think this was clever because the emphasis-characters are still there, but they are not visible so my problem is solved.

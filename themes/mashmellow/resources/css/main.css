@@ -201,7 +201,7 @@ code, pre {
 
 .underline:before, .underline:after {
                      content: "_";
-                     color: var(--ulin-color);
+                     color: var(--body-color);
                    }
 code {
   background: var(--cdbg-color);
