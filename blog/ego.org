@@ -78,4 +78,4 @@ I live, work, and sometimes sleep in San Franscisco :)
 This web space will be dedicated to my geekery and anything that interests
 #+END_SRC
 
-The about page is about as sparse.  I finally started my journing learning org-mode and the byproduct of that was this site :)
+The about page is about as sparse.  I finally started to learn org-mode and the byproduct was this post, and site :)
