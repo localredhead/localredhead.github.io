@@ -55,6 +55,24 @@ Choosing EGO I whipped together the requisite emacs configuration:
                      :category-ignore-list ("themes" "assets" "notes"))))
 #+END_SRC
 
+#+BEGIN_SRC
+#+END_SRC
+
+#+RESULTS:
+| DigID-Linq                      |
+| Highlight-Indentation-for-Emacs |
+| digid                           |
+| dotfiles_osx                    |
+| exact_equity_flex_client        |
+| exact_equity_server             |
+| linq                            |
+| localredhead.github.io          |
+| nasdaqpm                        |
+| nasdaqpm-dev                    |
+| oranges                         |
+| prelude_personal                |
+| sharespost2                     |
+
 EGO considers each directory in your root to be a category so whitelist any folders you want to ignore for publishing.  EGO looks for themes in the local root first so I placed my theme *mashmellow* in the themes folder.
 
 Once I had the documents ready, previewing and deploying was a breeze via
