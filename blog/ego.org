@@ -15,7 +15,6 @@ I have used middleman (ruby) and cryogen (clojure), but they require a lot of co
 
 The endless configuration options is just slowing me down so I needed to change how I published my site and its content.
 
-
 ** I found a number of org-mode blog solutions
 Historically there has been a couple of well-documented solutions for blogging with org-mode but I always found them lacking.  Many are included at [[http://orgmode.org/worg/org-blog-wiki.html][Org-blog-wiki]].
 
@@ -47,7 +46,8 @@ Choosing EGO I whipped together the requisite emacs configuration:
                      :site-main-title "Levi Strope"
                      :site-sub-title "entropy in action"
                      :theme (mashmellow)
-                     :summary (("years" :year :updates 10))
+                     :default-category "blog"
+                     :summary (("year" :year :updates 10))
                      :source-browse-url ("Github" "https://github.com/localredhead")
                      :personal-avatar "https://media.licdn.com/media/p/6/005/095/364/3fd9ba3.jpg"
                      :confound-email t
@@ -55,23 +55,6 @@ Choosing EGO I whipped together the requisite emacs configuration:
                      :category-ignore-list ("themes" "assets" "notes"))))
 #+END_SRC
 
-#+BEGIN_SRC
-#+END_SRC
-
-#+RESULTS:
-| DigID-Linq                      |
-| Highlight-Indentation-for-Emacs |
-| digid                           |
-| dotfiles_osx                    |
-| exact_equity_flex_client        |
-| exact_equity_server             |
-| linq                            |
-| localredhead.github.io          |
-| nasdaqpm                        |
-| nasdaqpm-dev                    |
-| oranges                         |
-| prelude_personal                |
-| sharespost2                     |
 
 EGO considers each directory in your root to be a category so whitelist any folders you want to ignore for publishing.  EGO looks for themes in the local root first so I placed my theme *mashmellow* in the themes folder.
 

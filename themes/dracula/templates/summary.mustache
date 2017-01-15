@@ -1,22 +1,22 @@
 <div>
   <div class="post">
-    {{#updates-p}}
-    <h1>Updates</h1>
+    <h1>{{summary-name}}: {{summary-item-name}}</h1>
     <ul class="org-ul-up">
-      {{#updates}}
+      {{#posts}}
         <li>
           <span>{{post-date}}&nbsp;&nbsp;»&nbsp;&nbsp;
             <a href="{{post-uri}}">{{post-title}}</a>
             <span class="tags"><code>{{{tag-links}}}</code></span>
           </span>
         </li>
-      {{/updates}}
+      {{/posts}}
     </ul>
-    {{/updates-p}}
+    <br/>
     <h1>{{summary-name}}: Index</h1>
-    <ul class="{{summary-name}}">
+    <ul class="org-ul-down tags">
       {{#summary}}
-        <li><a href="{{summary-item-uri}}">{{summary-item-name}} ({{count}})</a></li>
+        <li><a href="{{summary-item-uri}}">{{summary-item-name}} ({{count}})</a>
+        </li>
       {{/summary}}
     </ul>
   </div>
