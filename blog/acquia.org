@@ -21,11 +21,11 @@ The following should provide some quick notes to illuminate a path forward for a
 ** Step 1: Understand the Acquia workflow.
 - https://docs.acquia.com/site-factory/tiers/paas/workflow
 Acquia's site administration platform has opinions of how things should be done.  I assume most environments are similar or the same.
-****** Acquia cloud administration provides tools to manage:
-- Dev - deploy changes rapidly and test.
-- Staging - for QA and sign-off before rolling out to production
-- RA, meaning "Remote Administration" which is beyond the scope of this post.
-- Production - you know.
+*** Acquia cloud administration provides tools to manage:
+- *Dev* - deploy changes rapidly and test.
+- *Staging* - for QA and sign-off before rolling out to production
+- *RA* -  meaning "Remote Administration" which is beyond the scope of this post.
+- *Production* - you know.
 ** Step 2: Use cloud administration to clone production
 Use the cloud administration platform to clone your production environment to RA, Staging, and Develop.  This will ensure that you are making updates to the most recent production updates.
 
