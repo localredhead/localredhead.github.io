@@ -39,6 +39,7 @@ Within cloud administration for your account credentials, there is a link to dow
 Once that is completed =cd ~/.drush= and locate *cloudapi.acquia.com.pem*.  Install this certificate
 *** Install SSH keys.
 Use Acquia Cloud administration to install the SSH keys for your local development environment.
+=ssh-keygen -t rsa -b 4096 -C "levi.strope@gmail.com"=
 *** Download and install Acquia Developer Desktop
 - https://docs.acquia.com/dev-desktop
 Acquia development is achieved by use of the Acquia Developer Desktop.  This installs all necessary dependencies like MySQL, PHP, and Drupal and keeps these dependencies isolated. Once this tool is installed, configure the preferences with your private SSH key and Acquia Cloud Administrator account.
