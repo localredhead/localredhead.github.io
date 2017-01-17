@@ -24,7 +24,7 @@
   --main-color: #f8f8f2; /* body text                                          */
   --foot-color: #f1fa8c; /* footer text                                        */
   --post-color: #565761; /* post meta-data text                                */
-  --mlnk-color: #6272a4; /* navigation heading/link text                       */
+  --mlnk-color: #8be9fd; /* navigation heading/link text                       */
   --ulin-color: #f8f8f2; /* same as body to hide underline emphasis characters */
   --bold-color: #6272a4; /* anything with emphasis                             */
   --titl-color: #50fa7b; /* title text                                         */
@@ -36,7 +36,7 @@
   --cdem-color: #373844; /* same as cdbg to hide code emphasis characters      */
   --srch-color: #373844; /* search border                                      */
   --plii-color: #bd93f9; /* post list item bullet                              */
-  --mast-color: #464752; /* sub-title text                                     */
+  --mast-color: #565761; /* sub-title text                                     */
   --mali-color: #565761;
   --cdft-color: #f1fa8c; /* code font color                                    */
   --ahov-color: #0189cc;
@@ -81,7 +81,7 @@ html {
 body {
   padding: 20px;
   font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--main-color);
   background-color: var(--body-color);
 }
@@ -132,24 +132,24 @@ h2:before, h3:before, h4:before {
                       }
 h2:before {
   content: "*";
-  left: -2em;
+  left: -1.2em;
 }
 
-h2 {left: -2em;}
+h2 {left: -1.2em;}
 
 h3:before {
   content: "**";
-  left: -1.5em;
+  left: -1.1em;
 }
 
-h3 {left: -1.5em;}
+h3 {left: -1.1em;}
 
 h4:before {
   content: "***";
-  left: -1.475em;
+  left: -1.0em;
 }
 
-h4 {left: -1.475em;}
+h4 {left: -1.0em;}
 
 #table-of-contents > h2 {
   left: 0;
@@ -576,7 +576,7 @@ table th.right, table td.right {
 }
 
 .tags {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .navatar {
@@ -611,6 +611,12 @@ table th.right, table td.right {
 
 /* site-nav*/
 @media screen and (max-width: 512px) {
+  .masthead img.avatar {
+    top 20px;
+    height: 90px;
+    width: 90px;
+    right: 40%;
+  }
   .site-nav { border-top: 1px solid var(--sina-color); text-align: left; }
   .site-nav .menu-icon { display: block; width: 36px; height: 21px; line-height: 0; margin-top: 10px; margin-bottom: 5px; text-align: center;}
   .site-nav .menu-icon > svg { width: 18px; height: 15px; }
@@ -619,6 +625,16 @@ table th.right, table td.right {
   .site-nav:hover .trigger { display: block; padding-bottom: 5px; }
   .site-nav li{ display: block; padding: 5px 10px; }
   .site-nav li:before{ display: inline-block; content: "\00B7 \00a0"; color: var(--sili-color);}
+
+  #table-of-contents {
+    visibility: disabled;
+    display: none;
+  }
+
+  #searchform {
+    visibility: disabled;
+    display: none;
+  }
 }
 
 /* whole page */
@@ -626,13 +642,24 @@ table th.right, table td.right {
   /* Increase body padding and font-sizes */
   body {
     padding: 30px;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.15;
+  }
+  .masthead img.avatar {
+    top 25px;
+    height: 100px;
+    width: 100px;
   }
 }
 
 @media (min-width: 1024px) {
   body {
     padding: 30px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .masthead img.avatar {
+    height: 110px;
+    width: 110px;
   }
 }
