@@ -1,0 +1,74 @@
+#+TITLE:       How to administer and deploy Acquia cloud environments
+#+AUTHOR:      Levi Strope
+#+EMAIL:       levi.strope@gmail.com
+#+DATE:        2017-01-16 Mon
+
+#+URI:         /blog/%y/%m/%d/how-to-administer-and-deploy-acquia-cloud-environments
+#+TAGS:        acquia, drupal, drush, php, cms
+#+DESCRIPTION: High level notes on how to quickly administer and deploy changes to acquia cloud environments
+
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+
+* Managing Acquia and Drupal
+
+I want to preface all of this by stating that I am not and will never claim to be an Acquia or Drupal expert.  I am posting about what I learned, mostly as a reminder to myself when I need to come back to this and perform maintenance.
+
+I found the site administration with Acquia/Drupal frustrating.  I am just a unassuming engineer, and the boundry between Acquia and Drupal were opaque at first.
+
+The following should provide some quick notes to illuminate a path forward for anyone that finds themselves in a similar situation and needs to GSD.
+
+** Step 1: Understand the Acquia workflow.
+- https://docs.acquia.com/site-factory/tiers/paas/workflow
+Acquia's site administration platform has opinions of how things should be done.  I assume most environments are similar or the same.
+****** Acquia cloud administration provides tools to manage:
+- Dev - deploy changes rapidly and test.
+- Staging - for QA and sign-off before rolling out to production
+- RA, meaning "Remote Administration" which is beyond the scope of this post.
+- Production - you know.
+** Step 2: Use cloud administration to clone production
+Use the cloud administration platform to clone your production environment to RA, Staging, and Develop.  This will ensure that you are making updates to the most recent production updates.
+
+Once all environments are matching production you can begin to develop changes against the development environment.
+**** Note: Add administrative users for the Drupal CMS to your environment before propagate it to other environments.
+**** Note: Production should *always* be a tag.  *Always*.
+** Step 3: Setup development environment.
+*** Install Acquia certificate.
+Within cloud administration for your account credentials, there is a link to download Drush CLI site aliases.  Download the aliases and run the command to install the =.drush= and =.aquia= folders in your home directory.
+
+Once that is completed =cd ~/.drush= and locate *cloudapi.acquia.com.pem*.  Install this certificate
+*** Install SSH keys.
+Use Acquia Cloud administration to install the SSH keys for your local development environment.
+*** Download and install Acquia Developer Desktop
+- https://docs.acquia.com/dev-desktop
+Acquia development is achieved by use of the Acquia Developer Desktop.  This installs all necessary dependencies like MySQL, PHP, and Drupal and keeps these dependencies isolated. Once this tool is installed, configure the preferences with your private SSH key and Acquia Cloud Administrator account.
+*** Use Acquia Developer Desktop to pull down the cloud environment.
+Once the cloud development environment is cloned locally use Drush CLI from there.
+** Step 4: Use Drush CLI for local administration.
+*** Use the development desktop to open the "Drush" terminal, or execute the equivalent:
+#+BEGIN_SRC bash
+export PHP_ID=php5_5; export PATH="/Applications/DevDesktop/$PHP_ID/bin:/Applications/DevDesktop/mysql/bin:/Applications/DevDesktop/tools:$PATH" && cd "/Users/deadbeef/Projects/deadbeef-dev/docroot"
+#+END_SRC
+
+To install new plugins, you need to use the Drupal CMS administration to do so.  You gain access to it using *Drush ULI*.
+
+Here are a few useful commands you can do with a drush terminal:
+- use =drush uli= to obtain a login link to the development drupal instance.
+- use =drush uli -l http://yourdevinstance.aquia-sites.com= to specify which site to generate a link for.
+- run =drush acquia-update= to refresh your local site aliases.
+- check the status of your site using =drush @dev status= where "@dev" is one of your site aliases.
+- =drush status= should reflect the status of your local running site.
+- after making changes locally use =drush cc all= to clear caches and force a refresh of the site code.
+** Step 5: Cut a new branch for local development.
+Once your changes are ready push your branch so it is available remotely.
+- https://docs.acquia.com/acquia-cloud/manage/code
+** Step 6: Use Acquia Cloud management to point the development instance to your branch for validation.
+This will allow you to validate changes on acquia server instance.  Changes can be rolled forward to staging from here.
+- https://docs.acquia.com/site-factory/tiers/paas/test
+** Step 7: After validation on staging, merge code to master and tag.
+Once your changes are ready for the big show, you merge them to master and tag.  This is important, because Acquia assumes *master* is always ready for production.
+
+That being said, never deploy master to production direction because any changes made to master will update *live*.  This is the reason why production should always be deployed from a tag.  Tags are frozen in time and cannot be modified.  It is also good practice, in general, to tag a release.  I do this in all of the production environments that I maintain.
+- https://docs.acquia.com/site-factory/tiers/paas/test#merging
+** Step 8: Deploy to production
+- https://docs.acquia.com/site-factory/tiers/paas/deploy

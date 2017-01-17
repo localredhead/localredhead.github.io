@@ -146,10 +146,10 @@ h3 {left: -1.5em;}
 
 h4:before {
   content: "***";
-  left: -1.45em;
+  left: -1.475em;
 }
 
-h4 {left: -1.25em;}
+h4 {left: -1.475em;}
 
 #table-of-contents > h2 {
   left: 0;
