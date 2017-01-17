@@ -2,9 +2,11 @@
 #+AUTHOR:      Levi Strope
 #+EMAIL:       levi.strope@gmail.com
 #+DATE:        2016-11-26 Fri
+
 #+URI:         /blog/%y/%m/%d/ego
 #+TAGS:        emacs, org-mode, blog, blogging, writing
 #+DESCRIPTION: If you're reading this, you're probably bored.
+
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:t f:t *:t <:t
 
@@ -14,6 +16,7 @@
 I have used middleman (ruby) and cryogen (clojure), but they require a lot of configuration.  At the end of the day I just want to create content.
 
 The endless configuration options is just slowing me down so I needed to change how I published my site and its content.
+
 
 ** I found a number of org-mode blog solutions
 Historically there has been a couple of well-documented solutions for blogging with org-mode but I always found them lacking.  Many are included at [[http://orgmode.org/worg/org-blog-wiki.html][Org-blog-wiki]].
