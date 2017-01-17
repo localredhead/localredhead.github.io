@@ -423,6 +423,8 @@ table th.right, table td.right {
 .masthead img.avatar {
   position: absolute;
   top: 30px;
+  height: 115px;
+  width: 115px;
   right: 47%;
   background-color: var(--mabg-color);
   border-radius: 150px;
