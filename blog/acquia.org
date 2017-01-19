@@ -73,3 +73,7 @@ That being said, never deploy master to production direction because any changes
 - https://docs.acquia.com/site-factory/tiers/paas/test#merging
 ** Step 8: Deploy to production
 - https://docs.acquia.com/site-factory/tiers/paas/deploy
+
+* Notes:
+** Use acquia desktop to SSH into production environments.
+- If you need to obtain a login to this environment, use drush ULI after SSH.
