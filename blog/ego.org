@@ -33,7 +33,10 @@ I gravitated towards the simplicity of org-page because all I need is emacs and 
 - http://tumashu.github.io/org-webpage/ :: org-webpage looks slightly more robust, uses org-page underneath.
 - http://emacs-china.github.io/EGO/ :: EGO incorporates org-webpage and org-page, and it has decent documentation!
 
+
+
 * Execution: ~M-x package-install ego~
+
 
 
 Choosing EGO I whipped together the requisite emacs configuration:
@@ -52,7 +55,8 @@ Choosing EGO I whipped together the requisite emacs configuration:
                      :default-category "blog"
                      :summary (("year" :year :updates 10))
                      :source-browse-url ("Github" "https://github.com/localredhead")
-                     :personal-avatar "https://media.licdn.com/media/p/6/005/095/364/3fd9ba3.jpg"
+                     :personal-avatar "https://media.licdn.com/media/p/6/005/
+095/364/3fd9ba3.jpg"
                      :confound-email t
                      :ignore-file-name-regexp "readme.org"
                      :category-ignore-list ("themes" "assets" "notes"))))

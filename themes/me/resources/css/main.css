@@ -3,7 +3,7 @@
 
 /******************************************************
  *
- *       These edits are called: "Dracula"
+ *       These edits are called: "Mashmellow"
  *
  *****************************************************/
 
@@ -13,54 +13,51 @@
   /'_`\_    ___ ___    \_\ \    ___
  /'/'_` \ /' __` __`\  /'_` \  / __`\
 /\ \ \L\ \/\ \/\ \/\ \/\ \L\ \/\ \L\ \
-\ \ `\__,_\ \_\ \_\ \_\ \___,_\ \____/
+\ \ `\__,_\ \_\ \_\ \_\
+\___,_\ \____/
  \ `\_____\\/_/\/_/\/_/\/__,_ /\/___/
   `\/_____/
 
 */
 
 :root {
-  --sifi-color: #f1fa8c; /* table of contents                                  */
-  --main-color: #f8f8f2; /* body text                                          */
-  --foot-color: #f1fa8c; /* footer text                                        */
-  --post-color: #565761; /* post meta-data text                                */
-  --mlnk-color: #8be9fd; /* navigation heading/link text                       */
-  --ulin-color: #f8f8f2; /* same as body to hide underline emphasis characters */
-  --bold-color: #6272a4; /* anything with emphasis                             */
-  --titl-color: #50fa7b; /* title text                                         */
-  --h1---color: #ff79c6; /* h1                                                 */
-  --h2---color: #ff79c6; /* h2                                                 */
-  --h3---color: #bd93f9; /* h3                                                 */
-  --h4---color: #ffb86c; /* h4                                                 */
-  --cdbg-color: #373844; /* code background color                              */
-  --cdem-color: #373844; /* same as cdbg to hide code emphasis characters      */
-  --srch-color: #373844; /* search border                                      */
-  --plii-color: #bd93f9; /* post list item bullet                              */
-  --mast-color: #565761; /* sub-title text                                     */
-  --mali-color: #565761;
-  --cdft-color: #f1fa8c; /* code font color                                    */
-  --ahov-color: #0189cc;
-  --pobg-color: #373844;
-  --link-color: #8be9fd;
-  --sili-color: #ff5555;
-  --mabg-color: #464752;
-  --scbg-color: #373844;
-  --body-color: #282a36;
-  --goog-color: #565761; /* search textbox color                               */
-  --mabo-color: #565761;
-  --pobo-color: #565761;
-  --blqt-color: #ccccc7;
-  --hrln-color: #565761;
-  --dt---color: #ffb86c;
-  --pree-color: #6272a4; /* border around code */
-  --sina-color: #565761;
-  --sceh-color: #e2e2dc;
-  --tabo-color: #6272a4;
-  --preb-color: #373844;
+  --sifi-color: #68838b; /* table of contents                                  */
+  --main-color: #16161a; /* body text                                          */
+  --foot-color: #5f9ea0; /* footer text                                        */
+  --post-color: #5f9ea0; /* post meta-data text                                */
+  --mlnk-color: #5d5d67; /* navigation heading/link text                       */
+  --ulin-color: #528b8b; /* same as body to hide underline emphasis characters */
+  --bold-color: #000000; /* anything with emphasis                             */
+  --head-color: #5d5d67; /* title text                                         */
+  --cdbg-color: #777777; /* code background color (zenburn)                    */
+  --cdem-color: #777777; /* same as cdbg to hide code emphasis characters      */
+  --srch-color: #e5e5e5; /* search border                                      */
+  --plii-color: #cdb7b5; /* post list item bullet                              */
+  --sect-color: #68838b; /* h2, h3 headings.  Section text.                    */
+  --mast-color: #68838b; /* sub-title text                                     */
+  --mali-color: #8b7d7b;
+  --cdft-color: #16161a; /* code font color                                    */
+  --ahov-color: #3cb371;
+  --pobg-color: #008f0f;
+  --link-color: #8fbc8f;
+  --sili-color: #cfc;
+  --mabg-color: #FFFFFF; /* more whites than a Trump rally                     */
+  --scbg-color: #FFFFFF;
+  --body-color: #fbfefc;
+  --goog-color: #f9f9f9; /* search textbox color                               */
+  --mabo-color: #e2e3e4;
+  --pobo-color: #e2e3e4;
+  --blqt-color: #e5e5e5;
+  --hrln-color: #e2e3e4;
+  --pree-color: #e1e1e8;
+  --sina-color: #e8e8e8;
+  --sceh-color: #e1e1e8;
+  --tabo-color: #e5e5e5;
+  --preb-color: #777777;
   --sceb-color: #000000;
-  --tabg-color: #373844;
-  --grey-color: #565761;
-  --firs-color: #0189cc;
+  --tabg-color: #fbfefc;
+  --grey-color: #777777;
+  --firs-color: #blue;
 }
 
 * {
@@ -81,7 +78,7 @@ html {
 body {
   padding: 20px;
   font-family: 'Work Sans', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   color: var(--main-color);
   background-color: var(--body-color);
 }
@@ -91,28 +88,28 @@ p {
 }
 
 .title {
-  color: var(--titl-color);
+  color: var(--head-color);
   margin-bottom: 20px;
   text-align: center;
 }
 
 h1 {
-  color: var(--h1---color);
+  color: var(--sect-color);
   font-size:24px;
 }
 
 h2 {
-  color: var(--h2---color);
+  color: var(--sect-color);
   font-size:21px;
 }
 
 h3 {
-  color: var(--h3---color);
+  color: var(--sect-color);
   font-size:18px;
 }
 
 h4 {
-  color: var(--h4---color);
+  color: var(--sect-color);
   font-size:16px;
 }
 
@@ -132,24 +129,24 @@ h2:before, h3:before, h4:before {
                       }
 h2:before {
   content: "*";
-  left: -1.0em;
+  left: -2em;
 }
 
-h2 {left: -.8em;}
+h2 {left: -2em;}
 
 h3:before {
   content: "**";
-  left: -1.2em;
+  left: -1.5em;
 }
 
-h3 {left: -.6em;}
+h3 {left: -1.5em;}
 
 h4:before {
   content: "***";
-  left: -1.8em;
+  left: -1.6em;
 }
 
-h4 {left: -.4em;}
+h4 {left: -1.25em;}
 
 #table-of-contents > h2 {
   left: 0;
@@ -195,7 +192,7 @@ ul, ol {
 
 code, pre {
   font-family: 'Space Mono', monospace;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .underline {
@@ -278,7 +275,7 @@ pre.example {
 blockquote {
   padding: 0 0 0 20px;
   margin: 0 30px 20px -22.5px;
-  color: var(--titl-color);
+  color: var(--head-color);
   border-left: 8px solid var(--blqt-color);
 }
 
@@ -317,15 +314,10 @@ a:hover {
 }
 
 table {
-  /* line-height: 2.5; */
-  /* margin-bottom: 15px; */
+  line-height: 2.5;
+  margin-bottom: 15px;
   max-width: 100%;
   width: 100%;
-  border: 0px;
-  border-top-style: hidden;
-  border-bottom-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
 }
 
 table td, table th {
@@ -350,7 +342,6 @@ table th.right, table td.right {
   margin: 0 auto;
   max-width: 770px;
 }
-
 /* head */
 .masthead {
   color: var(--mast-color);
@@ -363,7 +354,7 @@ table th.right, table td.right {
 
 .masthead a:hover {
   text-decoration: underline;
-  color: var(--ahov-color);
+  color: var(--main-color);
 }
 
 .masthead ul {
@@ -386,6 +377,7 @@ table th.right, table td.right {
 .site-nav .menu-icon { display: none; }
 .site-nav li a {line-height: 1.5; }
 .site-nav li a:not(:first-child) { margin-left: 20px; }
+
 
 /* searchform*/
 #searchform {
@@ -422,9 +414,9 @@ table th.right, table td.right {
 
 .masthead img.avatar {
   position: absolute;
+  width: 120px;
+  height: 120px;
   top: 30px;
-  height: 115px;
-  width: 115px;
   right: 47%;
   background-color: var(--mabg-color);
   border-radius: 150px;
@@ -510,15 +502,6 @@ table th.right, table td.right {
   content: "\2223 \00a0";
 }
 
-.post-info a {
-  color: var(--mast-color);
-}
-
-.org-dl dt {
-  font-weight: bold;
-  color: var(--dt---color);
-}
-
 .center { margin-left: auto; margin-right: auto; text-align: center; }
 .org-center { margin-left: auto; margin-right: auto; text-align: center; }
 
@@ -575,17 +558,6 @@ table th.right, table td.right {
   margin-top: -1.5em;
 }
 
-.tags {
-  font-size: 13px;
-}
-
-.navatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
 /* footer */
 .footer {
   margin: 80px 0 0;
@@ -607,18 +579,17 @@ table th.right, table td.right {
   display: inline;
 }
 
+.navatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /* Responsive -------------------------------------------------- */
 
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 568px) {
-  /* for the iphone 5's */
-  .masthead img.avatar {
-    top 15px;
-    height: 85px;
-    width: 85px;
-    right: 32%;
-  }
+/* site-nav*/
+@media screen and (max-width: 512px) {
   .site-nav { border-top: 1px solid var(--sina-color); text-align: left; }
   .site-nav .menu-icon { display: block; width: 36px; height: 21px; line-height: 0; margin-top: 10px; margin-bottom: 5px; text-align: center;}
   .site-nav .menu-icon > svg { width: 18px; height: 15px; }
@@ -626,69 +597,20 @@ and (max-device-width : 568px) {
   .site-nav .trigger { clear: both; display: none; }
   .site-nav:hover .trigger { display: block; padding-bottom: 5px; }
   .site-nav li{ display: block; padding: 5px 10px; }
-  .site-nav li:before{ display: inline-block; content: "\00B7 \00a0"; color: var(--sili-color);}
-
-  #table-of-contents {
-    visibility: disabled;
-    display: none;
-  }
-
-  #searchform {
-    visibility: disabled;
-    display: none;
-  }
-}
-
-/* @media screen and (max-width: 568px) { */
-/*   .masthead img.avatar { */
-/*     top 20px; */
-/*     height: 90px; */
-/*     width: 90px; */
-/*     right: 40%; */
-/*   } */
-/*   .site-nav { border-top: 1px solid var(--sina-color); text-align: left; } */
-/*   .site-nav .menu-icon { display: block; width: 36px; height: 21px; line-height: 0; margin-top: 10px; margin-bottom: 5px; text-align: center;} */
-/*   .site-nav .menu-icon > svg { width: 18px; height: 15px; } */
-/*   .site-nav .menu-icon > svg path { fill: var(--sifi-color); } */
-/*   .site-nav .trigger { clear: both; display: none; } */
-/*   .site-nav:hover .trigger { display: block; padding-bottom: 5px; } */
-/*   .site-nav li{ display: block; padding: 5px 10px; } */
-/*   .site-nav li:before{ display: inline-block; content: "\00B7 \00a0"; color: var(--sili-color);} */
-
-/*   #table-of-contents { */
-/*     visibility: disabled; */
-/*     display: none; */
-/*   } */
-
-/*   #searchform { */
-/*     visibility: disabled; */
-/*     display: none; */
-/*   } */
-/* } */
+  .site-nav li:before{ display: inline-block; content: "\00B7 \00a0"; color: var(--sili-color);}}
 
 /* whole page */
 @media (min-width: 768px) {
   /* Increase body padding and font-sizes */
   body {
     padding: 30px;
-    font-size: 14px;
-    line-height: 1.15;
-  }
-  .masthead img.avatar {
-    top 25px;
-    height: 100px;
-    width: 100px;
+    font-size: 18px;
+    line-height: 1.75;
   }
 }
 
 @media (min-width: 1024px) {
   body {
     padding: 30px;
-    font-size: 16px;
-    line-height: 1.25;
-  }
-  .masthead img.avatar {
-    height: 110px;
-    width: 110px;
   }
 }
