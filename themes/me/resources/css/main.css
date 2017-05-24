@@ -599,7 +599,7 @@ table th.right, table td.right {
   .site-nav li{ display: block; padding: 5px 10px; }
   .site-nav li:before{ display: inline-block; content: "\00B7 \00a0"; color: var(--sili-color);}
   .avatar { display: none; }
-  .table-of-contents { display: none; }
+  #table-of-contents { display: none; }
 }
 
 
