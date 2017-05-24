@@ -132,21 +132,21 @@ h2:before {
   left: -2em;
 }
 
-h2 {left: -2em;}
+h2 {left: -1em;}
 
 h3:before {
   content: "**";
   left: -1.5em;
 }
 
-h3 {left: -1.5em;}
+h3 {left: -1.0em;}
 
 h4:before {
   content: "***";
   left: -1.6em;
 }
 
-h4 {left: -1.25em;}
+h4 {left: -1.0em;}
 
 #table-of-contents > h2 {
   left: 0;
