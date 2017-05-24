@@ -1,4 +1,4 @@
-#+TITLE:       Switching from Middleman to EGO for static-site generation.
+#+TITLE:       Switching from Middleman to EGO for static-site generation
 #+AUTHOR:      Levi Strope
 #+EMAIL:       levi.strope@gmail.com
 #+DATE:        2016-11-26 Fri
