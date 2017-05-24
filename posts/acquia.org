@@ -3,7 +3,7 @@
 #+EMAIL:       levi.strope@gmail.com
 #+DATE:        2017-01-16 Mon
 
-#+URI:         /blog/%y/%m/%d/how-to-administer-and-deploy-acquia-cloud-environments
+#+URI:         /posts/%y/%m/%d/how-to-administer-and-deploy-acquia-cloud-environments
 #+TAGS:        acquia, drupal, drush, php, cms
 #+DESCRIPTION: High level notes on how to quickly administer and deploy changes to acquia cloud environments
 

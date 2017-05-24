@@ -3,7 +3,7 @@
 #+EMAIL:       levi.strope@gmail.com
 #+DATE:        2016-11-26 Fri
 
-#+URI:         /blog/%y/%m/%d/ego
+#+URI:         /posts/%y/%m/%d/ego
 #+TAGS:        emacs, org-mode, blog, blogging, writing
 #+DESCRIPTION: If you're reading this, you're probably bored.
 

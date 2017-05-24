@@ -1,9 +1,9 @@
-#+TITLE:       Tips for blogging with org-mode and EGO
+#+TITLE:       Tips for postsging with org-mode and EGO
 #+AUTHOR:      Levi Strope
 #+EMAIL:       levi.strope@gmail.com
 #+DATE:        2016-11-28 Mon
 
-#+URI:         /blog/%y/%m/%d/tips-for-blogging-with-org-mode
+#+URI:         /posts/%y/%m/%d/tips-for-blogging-with-org-mode
 #+TAGS:        EGO, org-mode, blogging, writing, CSS
 #+DESCRIPTION: Using EGO with Org-mode to generate static content; how to hide org-mode emphasis symbols: =,*,-,_
 
