@@ -13,7 +13,9 @@
 * Managing Acquia and Drupal
 
 I want to preface all of this by stating that I am not and will never claim to be an Acquia or Drupal expert.  I am posting about what I learned, mostly as a reminder to myself when I need to come back to this and perform maintenance.
+
 I found the site administration with Acquia/Drupal frustrating.  I am just a unassuming engineer, and the boundry between Acquia and Drupal were opaque at first.
+
 The following should provide some quick notes to illuminate a path forward for anyone that finds themselves in a similar situation and needs to GSD.
 
 ** Step 1: Understand the Acquia workflow.
