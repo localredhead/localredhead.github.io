@@ -17,8 +17,8 @@
   --ulin-color: #528b8b; /* same as body to hide underline emphasis characters */
   --bold-color: #000000; /* anything with emphasis                             */
   --head-color: #5d5d67; /* title text                                         */
-  --cdbg-color: #cccccc; /* code background color (zenburn)                    */
-  --cdem-color: #cccccc; /* same as cdbg to hide code emphasis characters      */
+  --cdbg-color: #dddddd; /* code background color (zenburn)                    */
+  --cdem-color: #dddddd; /* same as cdbg to hide code emphasis characters      */
   --srch-color: #e5e5e5; /* search border                                      */
   --plii-color: #cdb7b5; /* post list item bullet                              */
   --sect-color: #68838b; /* h2, h3 headings.  Section text.                    */
@@ -41,7 +41,7 @@
   --sina-color: #e8e8e8;
   --sceh-color: #e1e1e8;
   --tabo-color: #e5e5e5;
-  --preb-color: #cccccc;
+  --preb-color: #dddddd;
   --sceb-color: #000000;
   --tabg-color: #fbfefc;
   --grey-color: #777777;
