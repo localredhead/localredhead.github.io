@@ -1,24 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
 /******************************************************
  *
- *       These edits are called: "Mashmellow"
+ *       These edits are called: "melon"
  *
  *****************************************************/
-
-/*-- Thanks to the the original author:
-                        __
-   __                  /\ \
-  /'_`\_    ___ ___    \_\ \    ___
- /'/'_` \ /' __` __`\  /'_` \  / __`\
-/\ \ \L\ \/\ \/\ \/\ \/\ \L\ \/\ \L\ \
-\ \ `\__,_\ \_\ \_\ \_\
-\___,_\ \____/
- \ `\_____\\/_/\/_/\/_/\/__,_ /\/___/
-  `\/_____/
-
-*/
 
 :root {
   --sifi-color: #68838b; /* table of contents                                  */
@@ -29,8 +17,8 @@
   --ulin-color: #528b8b; /* same as body to hide underline emphasis characters */
   --bold-color: #000000; /* anything with emphasis                             */
   --head-color: #5d5d67; /* title text                                         */
-  --cdbg-color: #777777; /* code background color (zenburn)                    */
-  --cdem-color: #777777; /* same as cdbg to hide code emphasis characters      */
+  --cdbg-color: #aaaaaa; /* code background color (zenburn)                    */
+  --cdem-color: #aaaaaa; /* same as cdbg to hide code emphasis characters      */
   --srch-color: #e5e5e5; /* search border                                      */
   --plii-color: #cdb7b5; /* post list item bullet                              */
   --sect-color: #68838b; /* h2, h3 headings.  Section text.                    */
@@ -53,7 +41,7 @@
   --sina-color: #e8e8e8;
   --sceh-color: #e1e1e8;
   --tabo-color: #e5e5e5;
-  --preb-color: #777777;
+  --preb-color: #aaaaaa;
   --sceb-color: #000000;
   --tabg-color: #fbfefc;
   --grey-color: #777777;
@@ -77,7 +65,8 @@ html {
 
 body {
   padding: 20px;
-  font-family: 'Work Sans', sans-serif;
+  font-feature-settings: "liga" 0;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 16px;
   color: var(--main-color);
   background-color: var(--body-color);
@@ -88,6 +77,7 @@ p {
 }
 
 .title {
+  font-family: 'Work Sans', sans-serif;
   color: var(--head-color);
   margin-bottom: 20px;
   text-align: center;
@@ -114,6 +104,7 @@ h4 {
 }
 
 h1, h2, h3, h4 {
+  font-family: 'Work Sans', sans-serif;
   position: relative;
   margin: 30px 0 20px;
   font-weight: bold;
@@ -192,7 +183,7 @@ ul, ol {
 
 code, pre {
   font-family: 'Space Mono', monospace;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .underline {
@@ -208,6 +199,7 @@ code {
   background: var(--cdbg-color);
   border-radius: 5px;
   color: var(--cdft-color);
+  display: inline;
 }
 
 code:before, code:after {
@@ -220,12 +212,16 @@ pre {
   padding: 15px;
   border: 1px solid var(--pree-color);
   border-radius: 3px 3px 3px 3px;
-  line-height: 28px;
   background-color: var(--preb-color);
+  font-size: 90%;
+  line-height: 1.2em;
   white-space: pre;
   white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  height:1%;
+  width: auto;
+  clear: both;
 }
 
 pre.src {

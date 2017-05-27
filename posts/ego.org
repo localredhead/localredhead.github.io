@@ -5,14 +5,14 @@
 
 #+URI:         /blog/%y/%m/%d/ego
 #+TAGS:        emacs, org-mode, blog, blogging, writing
-#+DESCRIPTION: If you're reading this, you're probably bored.
+#+DESCRIPTION: If you're reading this, you're probably bored
 
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:t f:t *:t <:t
 
 * Motivation
 
-** I want a simple way to produce blog content.
+** I want a simple way to produce blog content
 I have used middleman (ruby) and cryogen (clojure), but they require a lot of configuration.  At the end of the day I just want to create content.
 
 The endless configuration options is just slowing me down so I needed to change how I published my site and its content.
@@ -70,7 +70,7 @@ Once I had the documents ready, previewing and deploying was a breeze via
 + ~M-x ego-do-publication~
 
 Example index page:
-#+BEGIN_SRC orgmode
+#+BEGIN_SRC org
 #+TITLE:
 #+AUTHOR:      Levi Strope
 #+EMAIL:       levi.strope@gmail.com
