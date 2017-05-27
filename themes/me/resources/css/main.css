@@ -259,7 +259,7 @@ pre.src-matlab:before     { content: 'matlab';     }
 pre.src-maxima:before     { content: 'maxima';     }
 pre.src-lisp:before       { content: 'common lisp';}
 pre.src-ruby:before       { content: 'ruby';       }
-pre.src-orgmode:before    { content: 'orgmode';    }
+pre.src-org:before        { content: 'org';    }
 
 pre.example {
   background-color: var(--cdbg-color);
