@@ -223,6 +223,7 @@ pre {
   height:1%;
   width: auto;
   clear: both;
+  overflow-x auto;
 }
 
 pre.src {
