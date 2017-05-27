@@ -235,7 +235,7 @@ pre.src:before {
   display: none;
   position: absolute;
   background-color: var(--scbg-color);
-  top: -18px;
+  top: -5px;
   right: 10px;
   padding: 3px;
   border: 1px solid var(--sceb-color);
@@ -243,7 +243,7 @@ pre.src:before {
 }
 
 pre.src:hover:before {
-  display: block;
+  display: inline;
   background-color: var(--cdbg-color);
   border: 1px solid var(--sceh-color);
 }
