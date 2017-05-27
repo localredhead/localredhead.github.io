@@ -239,6 +239,7 @@ pre.src:before {
   right: 10px;
   padding: 3px;
   border: 1px solid var(--sceb-color);
+  z-index: 90;
 }
 
 pre.src:hover:before {
