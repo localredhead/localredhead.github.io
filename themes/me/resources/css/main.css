@@ -243,7 +243,7 @@ pre.src:before {
 }
 
 pre.src:hover:before {
-  display: inline-block;
+  display: block;
   background-color: var(--cdbg-color);
   border: 1px solid var(--sceh-color);
 }
