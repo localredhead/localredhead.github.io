@@ -184,7 +184,7 @@ ul, ol {
 
 code, pre {
   font-family: 'Space Mono', monospace;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .underline {
@@ -235,7 +235,7 @@ pre.src:before {
   display: none;
   position: absolute;
   background-color: var(--scbg-color);
-  top: -18px;
+  top: -30px;
   right: 10px;
   padding: 3px;
   border: 1px solid var(--sceb-color);
@@ -243,7 +243,7 @@ pre.src:before {
 }
 
 pre.src:hover:before {
-  display: inline;
+  display: inline-block;
   background-color: var(--cdbg-color);
   border: 1px solid var(--sceh-color);
 }
