@@ -217,9 +217,9 @@ pre {
   font-size: 90%;
   line-height: 1.2em;
   white-space: pre;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -o-pre-wrap;
+  /* white-space: pre-wrap; */
+  /* white-space: -moz-pre-wrap; */
+  /* white-space: -o-pre-wrap; */
   height:1%;
   width: auto;
   clear: both;
