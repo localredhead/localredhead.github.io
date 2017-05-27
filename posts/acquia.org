@@ -49,7 +49,8 @@ Once the cloud development environment is cloned locally use Drush CLI from ther
 *** Use the development desktop to open the "Drush" terminal, or execute the equivalent:
 #+BEGIN_SRC bash
 export PHP_ID=php5_5;
-export PATH="/Applications/DevDesktop/$PHP_ID/bin:/Applications/DevDesktop/mysql/bin:/Applications/DevDesktop/tools:$PATH" xb&& cd "/Users/deadbeef/Projects/deadbeef-dev/docroot"
+export PATH="/Applications/DevDesktop/$PHP_ID/bin:/Applications/DevDesktop/mysql/bin:/Applications/DevDesktop/tools:$PATH";
+cd "/Users/deadbeef/Projects/deadbeef-dev/docroot";
 #+END_SRC
 
 To install new plugins, you need to use the Drupal CMS administration to do so.  You gain access to it using *Drush ULI*.
