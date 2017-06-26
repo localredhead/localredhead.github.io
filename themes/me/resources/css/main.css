@@ -107,7 +107,8 @@ h4 {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Roboto Slab';
+  /* font-family: 'Work Sans', sans-serif; */
   position: relative;
   margin: 30px 0 20px;
   font-weight: bold;
