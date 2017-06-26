@@ -1,0 +1,85 @@
+#+TITLE:       Android Studio and React-Native developer setup using Homebrew
+#+AUTHOR:      L. Strope
+#+EMAIL:       levi.strope@gmail.com
+#+DATE:        2017-06-25 Sun
+
+#+URI:         /posts/%y/%m/%d/android-developer-setup-with-homebrew
+#+TAGS:        android, osx, developer, setup, homebrew, sierra
+#+DESCRIPTION: Setup android developer environment on OSX Sierra with Homebrew in 2017
+
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+
+* Homebrew for everything
+I use homebrew and brew-bundler to manage all my dependencies.  If you are curious how check out my [[https://github.com/localredhead/dotfiles_osx/tree/smtx-deltas][osx dotfiles]].
+
+A lot of things had changed since I last setup an android development environment and nearly every blog or stackoverflow or personal note had stale information.
+
+This is how I got up and running, with consideration to the following changes:
+- Android SDK is now installed via Cask
+- SDK location changed with homebrew install
+- The sdk manager and avd manager have new binaries
+- The manager binaries have new CLI's
+- Android Studio has become a standard
+
+* Pre-requisites
+Node dependencies (installed 8.1.2):
+#+BEGIN_SRC sh
+brew install node
+brew install yarn
+yarn global add n
+n latest
+#+END_SRC
+
+Android dependencies:
+#+BEGIN_SRC sh
+brew install ant
+brew install maven
+brew install gradle
+brew cask install android-sdk
+brew cask install android-ndk
+brew cask install intel-haxm
+brew cask install android-platform-tools
+brew cask install android-studio
+#+END_SRC
+
+React-native dependencies.
+#+BEGIN_SRC sh
+yarn global add react-native-cli
+yarn global add rnpm
+yarn global add babel-cli
+#+END_SRC
+
+* Configuration
+Add the following to .bash_profile
+#+BEGIN_EXAMPLE sh
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+export ANDROID_NDK_HOME=/usr/local/share/android-ndk
+export ANDROID_HOME=/usr/local/share/android-sdk
+export ANT_HOME=/usr/local/opt/ant
+export MAVEN_HOME=/usr/local/opt/maven
+export GRADLE_HOME=/usr/local/opt/gradle
+export PATH=$ANT_HOME/bin:$PATH
+export PATH=$MAVEN_HOME/bin:$PATH
+export PATH=$GRADLE_HOME/bin:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+#+END_EXAMPLE
+
+After this I started up android studio, and set the path to the android SDK to the proper location.
+[[./studio.png]]
+
+Now you use the Android Studio SDK Manager to install all SDK's your project needs. Some may choose to use the sdkmanager and avdmanager binaries directly but I think the GUI is easier.
+
+* Gotchas
+When running ~react-native run-android~ I was presented the following error:
+
+#+BEGIN_EXAMPLE sh
+Error watching file for changes: EMFILE
+{"code":"EMFILE","errno":"EMFILE","syscall":"Error watching file for changes:","filename":null}
+Error: Error watching file for changes: EMFILE
+#+END_EXAMPLE
+
+I found this [[https://github.com/facebook/react-native/issues/10088][Github issue]] on the react-native repo and resolved it with ~brew install watchman~.
+
+I hope this helps someone else setup their android and react-native development environment with homebrew.
