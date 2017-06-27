@@ -189,7 +189,7 @@ ul, ol {
 
 code, pre {
   font-family: 'Space Mono', monospace;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .underline {
@@ -219,7 +219,7 @@ pre {
   border: 1px solid var(--pree-color);
   border-radius: 3px 3px 3px 3px;
   background-color: var(--preb-color);
-  font-size: 90%;
+  font-size: .8em;
   line-height: 1.2em;
   white-space: pre;
   /* white-space: pre-wrap; */
