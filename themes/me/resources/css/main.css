@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
 
 /******************************************************
  *
@@ -189,7 +189,7 @@ ul, ol {
 
 code, pre {
   font-family: 'Space Mono', monospace;
-  font-size: 0.7em;
+  font-size: 0.75em;
 }
 
 .underline {
@@ -219,7 +219,7 @@ pre {
   border: 1px solid var(--pree-color);
   border-radius: 3px 3px 3px 3px;
   background-color: var(--preb-color);
-  font-size: .8em;
+  font-size: .85em;
   line-height: 1.2em;
   white-space: pre;
   /* white-space: pre-wrap; */
