@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /******************************************************
  *
@@ -71,7 +71,7 @@ html {
 
 body {
   padding: 20px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.6em;
   color: var(--main-color);
   background-color: var(--body-color);
