@@ -70,10 +70,10 @@ html {
 body {
   padding: 20px;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 1.6em;
   color: var(--main-color);
   background-color: var(--body-color);
-  line-height: 1.2;
+  line-height: 3rem;
 }
 
 p {
@@ -81,7 +81,7 @@ p {
 }
 
 .title {
-  font-family: 'Fjalla One';
+  font-family: 'Fjalla One', sans-serif;
   color: var(--head-color);
   margin-bottom: 20px;
   text-align: center;
@@ -108,8 +108,7 @@ h4 {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Fjalla One';
-  /* font-family: 'Work Sans', sans-serif; */
+  font-family: 'Fjalla One', sans-serif;
   position: relative;
   margin: 30px 0 20px;
   font-weight: bold;
@@ -188,7 +187,7 @@ ul, ol {
 
 code, pre {
   font-family: 'Space Mono', monospace;
-  /* font-size: 0.9em;  Does this do anything */
+  font-size: 0.8em;
 }
 
 .underline {
