@@ -188,7 +188,7 @@ ul, ol {
 
 code, pre {
   font-family: 'Space Mono', monospace;
-  font-size: 0.9em;
+  /* font-size: 0.9em;  Does this do anything */
 }
 
 .underline {
