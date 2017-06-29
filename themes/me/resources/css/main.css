@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Average');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Neuton');
+
+
+
 
 /******************************************************
  *
@@ -69,7 +75,7 @@ html {
 
 body {
   padding: 20px;
-  font-family: 'Slabo 27px', sans-serif;
+  font-family: 'Slabo 27px', serif;
   font-size: 1.6em;
   color: var(--main-color);
   background-color: var(--body-color);
@@ -81,7 +87,7 @@ p {
 }
 
 .title {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Neuton', serif;
   color: var(--head-color);
   margin-bottom: 20px;
   text-align: center;
