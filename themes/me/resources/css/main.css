@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
-@import url('https://fonts.googleapis.com/css?family=Slabo+13px');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 
 /******************************************************
  *
@@ -69,7 +69,7 @@ html {
 
 body {
   padding: 20px;
-  font-family: 'Slabo 13px', sans-serif;
+  font-family: 'Slabo 27px', sans-serif;
   font-size: 1.6em;
   color: var(--main-color);
   background-color: var(--body-color);
