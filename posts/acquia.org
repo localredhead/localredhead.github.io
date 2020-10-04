@@ -1,16 +1,13 @@
 #+TITLE:       How to administer and deploy Acquia cloud environments
-#+AUTHOR:      Levi Strope
-#+EMAIL:       levi.strope@gmail.com
 #+DATE:        2017-01-16 Mon
-
-#+URI:         /blog/%y/%m/%d/how-to-administer-and-deploy-acquia-cloud-environments
 #+TAGS:        acquia, drupal, drush, php, cms
-#+DESCRIPTION: High level notes on how to quickly administer and deploy changes to acquia cloud environments
-
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+setupfile: ../org-templates/post.org
 
 * Managing Acquia and Drupal
+:PROPERTIES:
+:ID:       fed0bee4-d7fd-47b4-8d91-88859c134e7d
+:PUBDATE:  <2020-10-04 Sun 18:48>
+:END:
 
 I want to preface all of this by stating that I am not and will never claim to be an Acquia or Drupal expert.  I am posting about what I learned, mostly as a reminder to myself when I need to come back to this and perform maintenance.
 
@@ -19,34 +16,70 @@ I found the site administration with Acquia/Drupal frustrating.  I am just a una
 The following should provide some quick notes to illuminate a path forward for anyone that finds themselves in a similar situation and needs to GSD.
 
 ** Step 1: Understand the Acquia workflow.
+:PROPERTIES:
+:ID:       bd9d1e3f-22f7-467a-b234-26b784a19483
+:END:
 - https://docs.acquia.com/site-factory/tiers/paas/workflow
 Acquia's site administration platform has opinions of how things should be done.  I assume most environments are similar or the same.
 *** Acquia cloud administration provides tools to manage:
+:PROPERTIES:
+:ID:       4a0ef75e-f7fd-42b7-a24b-7c0af116e049
+:END:
 - *Dev*     - deploy changes rapidly and test.
 - *Staging* - for QA and sign-off before rolling out to production
 - *RA*      -  meaning "Remote Administration" which is beyond the scope of this post.
 - *Production*
 ** Step 2: Use cloud administration to clone production
+:PROPERTIES:
+:ID:       71c8fa18-47bd-41b0-9cee-0a3a75e89c30
+:END:
 Use the cloud administration platform to clone your production environment to RA, Staging, and Develop.  This will ensure that you are making updates to the most recent production updates.
 
 Once all environments are matching production you can begin to develop changes against the development environment.
 **** Note: Add administrative users for the Drupal CMS to your environment before propagate it to other environments.
+:PROPERTIES:
+:ID:       a8a08246-5bcb-429c-a1c5-b1ac1a53a9e9
+:END:
 **** Note: Production should *always* be a tag.  *Always*.
+:PROPERTIES:
+:ID:       5856d641-db15-422e-907c-6b3e72fdbb23
+:END:
 ** Step 3: Setup development environment.
+:PROPERTIES:
+:ID:       bd92e7fd-0594-427a-a9ba-3f50f0c34b46
+:END:
 *** Install Acquia certificate.
+:PROPERTIES:
+:ID:       63888919-33fd-49cf-9730-01c269afae12
+:END:
 Within cloud administration for your account credentials, there is a link to download Drush CLI site aliases.  Download the aliases and run the command to install the =.drush= and =.aquia= folders in your home directory.
 
 Once that is completed =cd ~/.drush= and locate *cloudapi.acquia.com.pem*.  Install this certificate
 *** Install SSH keys.
+:PROPERTIES:
+:ID:       7995f767-6ad3-4d13-b5ce-683bb6e0104c
+:END:
 Use Acquia Cloud administration to install the SSH keys for your local development environment.
 =ssh-keygen -t rsa -b 4096 -C "levi.strope@gmail.com"=
 *** Download and install Acquia Developer Desktop
+:PROPERTIES:
+:ID:       3c0f8e15-4d2b-46bb-9e34-10ff3334ad1e
+:END:
 - https://docs.acquia.com/dev-desktop
 Acquia development is achieved by use of the Acquia Developer Desktop.  This installs all necessary dependencies like MySQL, PHP, and Drupal and keeps these dependencies isolated. Once this tool is installed, configure the preferences with your private SSH key and Acquia Cloud Administrator account.
 *** Use Acquia Developer Desktop to pull down the cloud environment.
+:PROPERTIES:
+:ID:       0ccdb485-9383-44f1-a91c-9e546895d3be
+:END:
 Once the cloud development environment is cloned locally use Drush CLI from there.
 ** Step 4: Use Drush CLI for local administration.
+:PROPERTIES:
+:ID:       610551a3-4b0c-4bb3-8ce0-87134693c13a
+:END:
 *** Use the development desktop to open the "Drush" terminal, or execute the equivalent:
+:PROPERTIES:
+:ID:       fa740388-3b9d-4082-8562-780a7f335de9
+:END:
 #+BEGIN_SRC bash
 export PHP_ID=php5_5;
 export PATH="/Applications/DevDesktop/$PHP_ID/bin:/Applications/DevDesktop/mysql/bin:/Applications/DevDesktop/tools:$PATH";
@@ -63,19 +96,38 @@ Here are a few useful commands you can do with a drush terminal:
 - =drush status= should reflect the status of your local running site.
 - after making changes locally use =drush cc all= to clear caches and force a refresh of the site code.
 ** Step 5: Cut a new branch for local development.
+:PROPERTIES:
+:ID:       d20d117e-14b7-4aa3-aefc-54a405eb0bd3
+:END:
 Once your changes are ready push your branch so it is available remotely.
 - https://docs.acquia.com/acquia-cloud/manage/code
 ** Step 6: Use Acquia Cloud management to point the development instance to your branch for validation.
+:PROPERTIES:
+:ID:       434f2b16-8087-4ac4-a52b-e6cc18db9d3c
+:END:
 This will allow you to validate changes on acquia server instance.  Changes can be rolled forward to staging from here.
 - https://docs.acquia.com/site-factory/tiers/paas/test
 ** Step 7: After validation on staging, merge code to master and tag.
+:PROPERTIES:
+:ID:       86228bc0-ea5c-4d1d-ae33-9dbe7dc3e6ea
+:END:
 Once your changes are ready for the big show, you merge them to master and tag.  This is important, because Acquia assumes *master* is always ready for production.
 
 That being said, never deploy master to production direction because any changes made to master will update *live*.  This is the reason why production should always be deployed from a tag.  Tags are frozen in time and cannot be modified.  It is also good practice, in general, to tag a release.  I do this in all of the production environments that I maintain.
 - https://docs.acquia.com/site-factory/tiers/paas/test#merging
 ** Step 8: Deploy to production
+:PROPERTIES:
+:ID:       3841924f-e2ab-4830-a600-d1b28c73f404
+:END:
 - https://docs.acquia.com/site-factory/tiers/paas/deploy
 
 * Notes:
+:PROPERTIES:
+:ID:       da820113-3a10-45f1-b020-f7614ea4ef84
+:PUBDATE:  <2020-10-04 Sun 18:48>
+:END:
 ** Use acquia desktop to SSH into production environments.
+:PROPERTIES:
+:ID:       ccf49ee7-bc9c-4f60-9822-a31837fa100d
+:END:
 - If you need to obtain a login to this environment, use drush ULI after SSH.

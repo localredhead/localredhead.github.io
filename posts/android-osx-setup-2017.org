@@ -1,16 +1,12 @@
 #+TITLE:       Android Studio and React-Native developer setup using Homebrew
-#+AUTHOR:      L. Strope
-#+EMAIL:       levi.strope@gmail.com
 #+DATE:        2017-06-25 Sun
-
-#+URI:         /posts/%y/%m/%d/android-developer-setup-with-homebrew
 #+TAGS:        android, osx, developer, setup, homebrew, sierra
-#+DESCRIPTION: Setup android developer environment on OSX Sierra with Homebrew in 2017
-
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:f \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 
 * Homebrew for everything
+:PROPERTIES:
+:ID:       1691144b-416d-4557-ac9e-d0b5a99ade0c
+:PUBDATE:  <2020-10-04 Sun 18:48>
+:END:
 I use homebrew and brew-bundler to manage all my dependencies.  If you are curious how check out my [[https://github.com/localredhead/dotfiles_osx/tree/smtx-deltas][osx dotfiles]].
 
 A lot of things had changed since I last setup an android development environment and nearly every blog or stackoverflow or personal note had stale information.
@@ -23,6 +19,10 @@ This is how I got up and running, with consideration to the following changes:
 - Android Studio has become a standard
 
 * Pre-requisites
+:PROPERTIES:
+:ID:       f882803b-3f94-4316-b9af-0b15af6b5dad
+:PUBDATE:  <2020-10-04 Sun 18:48>
+:END:
 Node dependencies (installed 8.1.2):
 #+BEGIN_SRC sh
 brew install node
@@ -51,6 +51,10 @@ yarn global add babel-cli
 #+END_SRC
 
 * Configuration
+:PROPERTIES:
+:ID:       132b8c7d-085c-408b-b496-5b3722867143
+:PUBDATE:  <2020-10-04 Sun 18:48>
+:END:
 Add the following to .bash_profile
 #+BEGIN_EXAMPLE sh
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
@@ -72,6 +76,10 @@ After this I started up android studio, and set the path to the android SDK to t
 Now you use the Android Studio SDK Manager to install all SDK's your project needs. Some may choose to use the sdkmanager and avdmanager binaries directly but I think the GUI is easier.
 
 * Gotchas
+:PROPERTIES:
+:ID:       72981a79-0c68-46ba-967f-134e050ff6b4
+:PUBDATE:  <2020-10-04 Sun 18:48>
+:END:
 When running ~react-native run-android~ I was presented the following error:
 
 #+BEGIN_EXAMPLE sh

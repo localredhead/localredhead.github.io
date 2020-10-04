@@ -1,27 +1,33 @@
 #+TITLE:       Switching from Middleman to EGO for static-site generation
-#+AUTHOR:      Levi Strope
-#+EMAIL:       levi.strope@gmail.com
 #+DATE:        2016-11-26 Fri
-
-#+URI:         /blog/%y/%m/%d/ego
-#+TAGS:        emacs, org-mode, blog, blogging, writing
-#+DESCRIPTION: If you're reading this, you're probably bored
-
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:t f:t *:t <:t
+#+setupfile: ../org-templates/post.org
+#+TAGS:        e!macs, org-mode, blog, blogging, writing
 
 * Motivation
+:PROPERTIES:
+:ID:       07d1cb65-f322-4080-b3fc-48a8e3c3651a
+:PUBDATE:  <2020-10-04 Sun 18:48>
+:END:
 
 ** I want a simple way to produce blog content
+:PROPERTIES:
+:ID:       9354b4d9-44f6-4373-a319-2e7d6c850ae0
+:END:
 I have used middleman (ruby) and cryogen (clojure), but they require a lot of configuration.  At the end of the day I just want to create content.
 
 The endless configuration options is just slowing me down so I needed to change how I published my site and its content.
 
 
 ** I found a number of org-mode blog solutions
+:PROPERTIES:
+:ID:       454157d0-eb01-43d5-8d01-c8cf5ff34da8
+:END:
 Historically there has been a couple of well-documented solutions for blogging with org-mode but I always found them lacking.  Many are included at [[http://orgmode.org/worg/org-blog-wiki.html][Org-blog-wiki]].
 
 ** There are three that stand out:
+:PROPERTIES:
+:ID:       dd081a0a-390c-4060-b497-65681897b973
+:END:
 + o-blog :: The link of o-blog pointed to the v1 version, but the v2 version did not seem much better.
 + org-page :: allows me to generate a site from my org notes!
 + nikola :: Nikola is awesome but it is a third-party dependency.  I needed simpler.
@@ -36,6 +42,10 @@ I gravitated towards the simplicity of org-page because all I need is emacs and 
 
 
 * Execution: ~M-x package-install ego~
+:PROPERTIES:
+:ID:       cdf2867a-2007-4fcb-b931-e4c02ebb228c
+:PUBDATE:  <2020-10-04 Sun 18:48>
+:END:
 
 
 

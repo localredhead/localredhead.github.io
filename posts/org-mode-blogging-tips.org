@@ -2,13 +2,8 @@
 #+AUTHOR:      Levi Strope
 #+EMAIL:       levi.strope@gmail.com
 #+DATE:        2016-11-28 Mon
-
-#+URI:         /blog/%y/%m/%d/tips-for-blogging-with-org-mode
 #+TAGS:        EGO, org-mode, blogging, writing, CSS
-#+DESCRIPTION: Using EGO with Org-mode to generate static content; how to hide org-mode emphasis symbols: =,*,-,_
-
-#+LANGUAGE:    en
-#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+setupfile: ../org-templates/post.org
 
 There were a few things that annoyed me with org-mode.  I considered one of them a deal-killer: _all org-mode emphasis characters were exported too_.
 
@@ -19,6 +14,9 @@ Before I found a solution I tried everything I could think of; pouring over org-
 This exercise was not completely fruitless, as I stumpled upon a way to remove them when I realized how emacs and org-mode itself hides the characters.
 
 **** Pro Tip: *Modify the CSS to hide the offending characters.*
+:PROPERTIES:
+:ID:       4b7c86c5-d96c-4441-953b-ac4958aa6b16
+:END:
 
 For instance, to remove leading stars:
 
