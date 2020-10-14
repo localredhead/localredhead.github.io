@@ -1,5 +1,5 @@
-#+title:  10 reasons why vanilla is the best flavor
-#+date: <2020-10-01>
+#+title: 10 reasons why vanilla is the best flavor
+#+date: <2020-10-13>
 #+keywords: draft
 #+exclude_tags: noexport
 #+setupfile: ../org-templates/post.org
@@ -9,104 +9,93 @@
 :ID:       23cd0f79-04c7-4819-993e-a50193b1e3c6
 :PUBDATE:  <2020-10-04 Sun 18:48>
 :END:
-** A case for sticking with the defaults
+** Tldr; There aren't 10 reasons.
 :PROPERTIES:
 :ID:       f879276d-bab5-4872-9761-1271e3f3af44
 :END:
-*** The designer's intent
+Just Use the defaults to their fullest.
+
+If you cover everything with chocolate and sprinkles, how will you notice the sublime flavor of a good vanilla ice-cream?
+** Design intent
 :PROPERTIES:
 :ID:       c2e6d091-b502-4aba-8275-2d1a5a0064a0
 :END:
-There is a lot left unsaid for the intent of the designer.  Designers are involved
-in nearly everything.  That reason why you love Apple so much is everything to do
-with design and empathy for the users.
+As with vanilla as a flavor, design intent is often overlooked or taken for granted.  Even though it touches nearly every piece of a product from ideation to creation.
 
-One could say that the apple designers also had little empathy for the user's wallets.
-That's true - but there are other and other brands with that intent baked into their design ethos.
+Architecture?
 
-What holds true, no matter what brand you choose, is that by sticking with the
-defaults we allow ourselves time to learn the designer's intent.
+Design.
 
-My adding out own opinions we add variability and potentially
-**** look at my skagen falster 3 and the position of the clock placements.
+Writing?
+
+Design.
+
+Branding, Marketing?
+
+DESIGN!
+
+In software, there's design (and turtles) all the way down and that's where I'll be writing from.
+** The joy of a good experience
 :PROPERTIES:
-:ID:       6b448474-fd23-46c3-b6df-d189cfb353f1
+:ID:       8d2db6fd-73d3-40af-b142-e700c9d9f8f5
 :END:
-**** you begin to change the intent of the designer whom likely thought more about, whatever it is.
+Even with you're food, someone designed the flavor.
+
+The difference between liking something versus adoring it has a lot to do with design and empathy for the users of it.
+
+So why do people see it upon themselves to subvert the intent of a designer by customizing the experience to their own desires?
+
+#+BEGIN_EXPORT html
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Always be tuning</p>&mdash; Levi Strope (@localredhead) <a href="https://twitter.com/localredhead/status/1316365104385077248?ref_src=twsrc%5Etfw">October 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+#+END_EXPORT
+
+*** Exactly.
 :PROPERTIES:
-:ID:       7488ac1d-ef5f-4a93-91ef-4d91136cd3f6
-:END:
-*** Time
-:PROPERTIES:
-:ID:       1faa9376-2a4f-48b9-82dd-7075890150da
-:END:
-**** does it get the job done?
-:PROPERTIES:
-:ID:       057163c4-790b-4584-a8ec-0b09d0a4954b
-:END:
-- not perfectly?  what about 80/20?
-*** Examples
-:PROPERTIES:
-:ID:       e2fd2e5d-bcb2-4901-9f1a-874ec664aa99
-:END:
-**** Cars
-:PROPERTIES:
-:ID:       b29cfd73-6b4c-49d1-b868-3850525bd36d
-:END:
-***** big rims look nice but are heavier
-:PROPERTIES:
-:ID:       1d89badb-02ac-41f0-9313-c786924070f5
-:END:
-***** loud radios are just that - loud
-:PROPERTIES:
-:ID:       3fe2b3aa-bf14-406a-af91-77e6e95a6054
-:END:
-**** Ruby On Rails
-:PROPERTIES:
-:ID:       b884adf6-ed07-42dd-b3f3-e4ab91ae5ab4
-:END:
-***** the default framework offers everything you need out of the box, yet allows flexibility.
-:PROPERTIES:
-:ID:       94a7a66a-d82b-498f-a28b-2f516dcbc47b
-:END:
-****** too often people like to change these defaults before validating the defaults
-:PROPERTIES:
-:ID:       787f2d4d-4665-4a55-8045-845c9f7a5cd8
-:END:
-**** Linux
-:PROPERTIES:
-:ID:       78ef61f2-77c6-4484-8a78-b72f433fafc6
-:END:
-***** Way too many options out there.
-:PROPERTIES:
-:ID:       fe875a16-6dbe-4761-830a-1e16155e49ef
-:END:
-***** Elitists want you to struggle building your own arch image to "arrive"
-:PROPERTIES:
-:ID:       1e44be05-fcab-4d4e-a141-9ebe29392158
-:END:
-***** Pick a sane distro that does things well, and has a great community and paid support.  For myself this is ChromeOS & debian.
-:PROPERTIES:
-:ID:       204342ac-31cc-420e-9b54-c774a18677b2
-:END:
-**** Audio
-:PROPERTIES:
-:ID:       7c0b8ac4-18c9-4926-854c-329ae4ee26f0
-:END:
-***** I spent so many hours reading reviews, finding the best headphones to audiotion.
-:PROPERTIES:
-:ID:       93d1a5a3-5825-41e0-8e1d-d6e4f0bde828
-:END:
-***** Airpods and convenience had a good enough sound by default to place all other devices in the bin.
-:PROPERTIES:
-:ID:       825409e4-1831-4c5d-805b-7136385b2582
+:ID:       46c0857e-ed64-473d-9afb-bc30980444cb
 :END:
 
+It's not always bad design.
+
+As a tinkerer myself I think it's an inherent need to always be tuning.  By allowing myself to think this way it's possible to dilute the intent of the designer.  Someone who thought about the problem space I'm stepping on at a deeper level.
+
+A good example is personal computing. It could be as simple as changing the desktop(linux), adding custom widgets, etc.  In my experience these are cute and make me feel cool, but usually "cute" slows things down over time.
+** Entropy
+:PROPERTIES:
+:ID:       2a03d573-e9a2-4c2e-8dba-473f22b26c69
+:END:
+With every change an opportunity for entropy presents itself.  Eventually these modifications accumulate and diminish the will of the designer.  Or dilute the flavor, if you're still following the analogy from before.
+
+In my case, I find myself maintaining a lot of extra things that don't come packaged by default.  I may not be aware that suitable defaults exist!
+
+A younger me would respond with "be you're own designer".  I find the task of design both fulfilling and incredibly difficult.   For myself it shall always be a hobby and I would tell my younger self:
+
+#+BEGIN_QUOTE
+Settle into my ways of working smarter, not harder.
+#+END_QUOTE
+
+I've had a mentor or three say this to me over the years.  Stubborn is one adjective I can safely brandish.  Hopefully this post will serve as a reminder to my future self.
+** Beat Entropy
+:PROPERTIES:
+:ID:       452dd5a1-0ee8-4e3a-8153-9ab960587ee3
+:END:
+The way to beat entropy is to not contribute to it in this case.
+
+Sticking with the defaults and being sure to utilize them to their fullest is the best for 90% of situations.
+
+Most times following the path that was already paved is the pragmatic choice to save time, energy and maximize productivity.
 ** Is this a case for mediocraty?
 :PROPERTIES:
 :ID:       77303937-211b-4fce-bd76-697cfa213b4d
 :END:
-*** It's a case for keeping it simple.
+It could be.  In some cases the grass is greener.  But don't simply assume it is before checking first and be mindful how much time you spend "checking" ;)
+
+What are the trade-offs?
+** It's a case for keeping it simple.
 :PROPERTIES:
 :ID:       896b050b-98c1-4dd0-912c-594da9b50817
 :END:
+The tinkerer's out there will think this frame of thought is boring.  There is a lot to learn when diverging away from the intent of the design.  **Diverging** is healthy, at times.  I learn a lot when I do but the purpose of this learning should be to **converge** and apply those lessons.  If what I'm learning isn't moving the needle I try to consider if there may be more productive ways to spend time.  I only have so much to give.
+
+As with anything, strict dogma to any one frame of thought would be unhealthy so I allow my self the freedom to geek out and explore once in a while, but considerably less than my younger years.
+
+I'm applying my lessons learned, and converging back to simplicity.
