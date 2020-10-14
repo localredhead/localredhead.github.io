@@ -1,0 +1,1 @@
+Personal site of Levi Strope, managed by emacs, org mode, git and org-publish.

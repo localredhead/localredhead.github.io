@@ -1,0 +1,4 @@
+#+AUTHOR: Levi Strope
+#+EMAIL: levi.strope@gmail.com
+#+OPTIONS: toc:nil
+#+HTML_DOCTYPE: xhtml-strict
