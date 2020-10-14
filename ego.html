@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- Oct 14, 2020 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Switching from Middleman to EGO for static-site generation</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Levi Strope" />
+<link rel='icon' type='image/x-icon' href='/images/favicon.ico'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://code.cdn.mozilla.net/fonts/fira.css'>
+<link rel='stylesheet' href='/css/site.css?v=2' type='text/css'/>
+<link rel='stylesheet' href='/css/custom.css' type='text/css'/>
+<link rel='stylesheet' href='/css/syntax-coloring.css' type='text/css'/>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="/"> UP </a>
+ |
+ <a accesskey="H" href="/"> HOME </a>
+</div><header id="top" class="status">
+<div class='intro'>
+  <img src='/images/about/punktocat.gif' alt='Levi Strope' class='no-border'/>
+  <h1>
+    <span class="gray">Levi</span>
+    <span class="gray">Strope</span>
+  </h1>
+  <p>Entropy In Action</p>
+</div>
+
+<div class='nav'>
+<ul>
+<li><a href='/'>Blog</a>.</li>
+<li><a href='/index.xml'>RSS</a>.</li>
+<li><a href='/about/'>Photography</a></li>
+</ul>
+</div>
+</header>
+<main id="content">
+<h1 class="title">Switching from Middleman to EGO for static-site generation
+<br />
+<span class="subtitle">Published on (2016-11-26 Fri) by Levi Strope.</span>
+</h1>
+
+<section id="outline-container-org9884ad6" class="outline-2">
+<h2 id="org9884ad6">Motivation</h2>
+<div class="outline-text-2" id="text-org9884ad6">
+</div>
+
+<div id="outline-container-org659c5da" class="outline-3">
+<h3 id="org659c5da">I want a simple way to produce blog content</h3>
+<div class="outline-text-3" id="text-org659c5da">
+<p>
+I have used middleman (ruby) and cryogen (clojure), but they require a lot of configuration.  At the end of the day I just want to create content.
+</p>
+
+<p>
+The endless configuration options is just slowing me down so I needed to change how I published my site and its content.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org30321e9" class="outline-3">
+<h3 id="org30321e9">I found a number of org-mode blog solutions</h3>
+<div class="outline-text-3" id="text-org30321e9">
+<p>
+Historically there has been a couple of well-documented solutions for blogging with org-mode but I always found them lacking.  Many are included at <a href="http://orgmode.org/worg/org-blog-wiki.html">Org-blog-wiki</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8a923a3" class="outline-3">
+<h3 id="org8a923a3">There are three that stand out:</h3>
+<div class="outline-text-3" id="text-org8a923a3">
+<dl class="org-dl">
+<dt>o-blog</dt><dd>The link of o-blog pointed to the v1 version, but the v2 version did not seem much better.</dd>
+<dt>org-page</dt><dd>allows me to generate a site from my org notes!</dd>
+<dt>nikola</dt><dd>Nikola is awesome but it is a third-party dependency.  I needed simpler.</dd>
+</dl>
+
+<p>
+I gravitated towards the simplicity of org-page because all I need is emacs and I wanted to use org-mode for content.  Unfortunately <b>org-page</b> is lacking in some explanation of options so I began searching.
+</p>
+
+<dl class="org-dl">
+<dt><a href="https://github.com/kelvinh/org-page/blob/master/doc/quick-guide.org">https://github.com/kelvinh/org-page/blob/master/doc/quick-guide.org</a></dt><dd>This was crucial to configuring org-page.</dd>
+<dt><a href="http://kuangdash.github.io/blog/2015/04/15/org-page%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/">http://kuangdash.github.io/blog/2015/04/15/org-page%E7%9A%84%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</a> </dt><dd>More configuration notes for org-page.  Needs translation.</dd>
+<dt><a href="http://tumashu.github.io/org-webpage/">http://tumashu.github.io/org-webpage/</a></dt><dd>org-webpage looks slightly more robust, uses org-page underneath.</dd>
+<dt><a href="http://emacs-china.github.io/EGO/">http://emacs-china.github.io/EGO/</a></dt><dd>EGO incorporates org-webpage and org-page, and it has decent documentation!</dd>
+</dl>
+</div>
+</div>
+</section>
+
+
+
+<section id="outline-container-org992f1ba" class="outline-2">
+<h2 id="org992f1ba">Execution: <code>M-x package-install ego</code></h2>
+<div class="outline-text-2" id="text-org992f1ba">
+<p>
+Choosing EGO I whipped together the requisite emacs configuration:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-constant">require</span> <span class="org-highlight-quoted-quote">'</span><span class="org-constant">ego</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-rainbow-delimiters-depth-1">(</span>ego-add-to-alist <span class="org-highlight-quoted-quote">'</span><span class="org-highlight-quoted-symbol">ego-project-config-alist</span>
+                  <span class="org-highlight-quoted-quote">`</span><span class="org-rainbow-delimiters-depth-2">(</span><span class="org-rainbow-delimiters-depth-3">(</span><span class="org-string">"localredhead"</span>
+                     <span class="org-builtin">:repository-directory</span> <span class="org-string">"~/Projects/localredhead.github.io"</span>
+                     <span class="org-builtin">:repository-org-branch</span> <span class="org-string">"source"</span> <span class="org-comment-delimiter">;</span>
+                     <span class="org-builtin">:repository-html-branch</span> <span class="org-string">"master"</span> <span class="org-comment-delimiter">;</span>
+                     <span class="org-builtin">:site-domain</span> <span class="org-string">"https://levistrope.com"</span>
+                     <span class="org-builtin">:site-main-title</span> <span class="org-string">"Levi Strope"</span>
+                     <span class="org-builtin">:site-sub-title</span> <span class="org-string">"entropy in action"</span>
+                     <span class="org-builtin">:theme</span> <span class="org-rainbow-delimiters-depth-1">(</span>mashmellow<span class="org-rainbow-delimiters-depth-1">)</span>
+                     <span class="org-builtin">:default-category</span> <span class="org-string">"blog"</span>
+                     <span class="org-builtin">:summary</span> <span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">"year"</span> <span class="org-builtin">:year</span> <span class="org-builtin">:updates</span> <span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+                     <span class="org-builtin">:source-browse-url</span> <span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"Github"</span> <span class="org-string">"https://github.com/localredhe</span><span class="org-string"><span class="org-hl-fill-column">a</span></span><span class="org-string">d"</span><span class="org-rainbow-delimiters-depth-1">)</span>
+                     <span class="org-builtin">:personal-avatar</span> <span class="org-string">"https://media.licdn.com/media/p/6/005/</span>
+<span class="org-string">095/364/3fd9ba3.jpg"</span>
+                     <span class="org-builtin">:confound-email</span> t
+                     <span class="org-builtin">:ignore-file-name-regexp</span> <span class="org-string">"readme.org"</span>
+                     <span class="org-builtin">:category-ignore-list</span> <span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">"themes"</span> <span class="org-string">"assets"</span> <span class="org-string">"notes"</span><span class="org-rainbow-delimiters-depth-1">)</span><span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+
+<p>
+EGO considers each directory in your root to be a category so whitelist any folders you want to ignore for publishing.  EGO looks for themes in the local root first so I placed my theme <b>mashmellow</b> in the themes folder.
+</p>
+
+<p>
+Once I had the documents ready, previewing and deploying was a breeze via
+</p>
+<ul class="org-ul">
+<li><code>M-x ego-test-current-page</code></li>
+<li><code>M-x ego-do-publication</code></li>
+</ul>
+
+<p>
+Example index page:
+</p>
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-org-document-info-keyword">#+TITLE:</span>
+<span class="org-org-document-info-keyword">#+AUTHOR:</span>      <span class="org-org-document-info">Levi Strope</span>
+<span class="org-org-document-info-keyword">#+EMAIL:</span>       <span class="org-org-document-info">levi.strope@gmail.com</span>
+<span class="org-org-meta-line">#+URI:         /</span>
+<span class="org-org-meta-line">#+DESCRIPTION: Personal website of Levi Strope</span>
+<span class="org-org-meta-line">#+LANGUAGE:    en</span>
+<span class="org-org-meta-line">#+OPTIONS:     H:3 num:nil toc:t \n:nil ::t |:t ^:nil -:nil f:t *:t &lt;:t</span>
+
+Hello!
+
+I live, work, and sometimes sleep in San Franscisco :)
+
+This web space will <span class="org-writegood-passive-voice">be dedicated</span> to my geekery and anything that interests
+</pre>
+</div>
+
+<p>
+The about page is about as sparse.  I finally started to learn org-mode and the byproduct was this post, and site :)
+</p>
+</div>
+</section>
+</main>
+<footer id="postamble" class="status">
+<div class='footer'>
+  Copyright © 2020 <a href='mailto:levi.strope@example.com'>Levi Strope.</a><br>
+  Last updated on Oct 14, 2020. Generated using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.4).
+</div>
+</footer>
+</body>
+</html>

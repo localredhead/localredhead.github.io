@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- Oct 14, 2020 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>How to administer and deploy Acquia cloud environments</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Levi Strope" />
+<link rel='icon' type='image/x-icon' href='/images/favicon.ico'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://code.cdn.mozilla.net/fonts/fira.css'>
+<link rel='stylesheet' href='/css/site.css?v=2' type='text/css'/>
+<link rel='stylesheet' href='/css/custom.css' type='text/css'/>
+<link rel='stylesheet' href='/css/syntax-coloring.css' type='text/css'/>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="/"> UP </a>
+ |
+ <a accesskey="H" href="/"> HOME </a>
+</div><header id="top" class="status">
+<div class='intro'>
+  <img src='/images/about/punktocat.gif' alt='Levi Strope' class='no-border'/>
+  <h1>
+    <span class="gray">Levi</span>
+    <span class="gray">Strope</span>
+  </h1>
+  <p>Entropy In Action</p>
+</div>
+
+<div class='nav'>
+<ul>
+<li><a href='/'>Blog</a>.</li>
+<li><a href='/index.xml'>RSS</a>.</li>
+<li><a href='/about/'>Photography</a></li>
+</ul>
+</div>
+</header>
+<main id="content">
+<h1 class="title">How to administer and deploy Acquia cloud environments
+<br />
+<span class="subtitle">Published on (2017-01-16 Mon) by Levi Strope.</span>
+</h1>
+
+<section id="outline-container-org35c9a23" class="outline-2">
+<h2 id="org35c9a23">Managing Acquia and Drupal</h2>
+<div class="outline-text-2" id="text-org35c9a23">
+<p>
+I want to preface all of this by stating that I am not and will never claim to be an Acquia or Drupal expert.  I am posting about what I learned, mostly as a reminder to myself when I need to come back to this and perform maintenance.
+</p>
+
+<p>
+I found the site administration with Acquia/Drupal frustrating.  I am just a unassuming engineer, and the boundry between Acquia and Drupal were opaque at first.
+</p>
+
+<p>
+The following should provide some quick notes to illuminate a path forward for anyone that finds themselves in a similar situation and needs to GSD.
+</p>
+</div>
+
+<div id="outline-container-org0eaf310" class="outline-3">
+<h3 id="org0eaf310">Step 1: Understand the Acquia workflow.</h3>
+<div class="outline-text-3" id="text-org0eaf310">
+<ul class="org-ul">
+<li><a href="https://docs.acquia.com/site-factory/tiers/paas/workflow">https://docs.acquia.com/site-factory/tiers/paas/workflow</a></li>
+</ul>
+<p>
+Acquia&rsquo;s site administration platform has opinions of how things should be done.  I assume most environments are similar or the same.
+</p>
+</div>
+<div id="outline-container-orga5fad3f" class="outline-4">
+<h4 id="orga5fad3f">Acquia cloud administration provides tools to manage:</h4>
+<div class="outline-text-4" id="text-orga5fad3f">
+<ul class="org-ul">
+<li><b>Dev</b>     - deploy changes rapidly and test.</li>
+<li><b>Staging</b> - for QA and sign-off before rolling out to production</li>
+<li><b>RA</b>      -  meaning &ldquo;Remote Administration&rdquo; which is beyond the scope of this post.</li>
+<li><b>Production</b></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org16d5ba6" class="outline-3">
+<h3 id="org16d5ba6">Step 2: Use cloud administration to clone production</h3>
+<div class="outline-text-3" id="text-org16d5ba6">
+<p>
+Use the cloud administration platform to clone your production environment to RA, Staging, and Develop.  This will ensure that you are making updates to the most recent production updates.
+</p>
+
+<p>
+Once all environments are matching production you can begin to develop changes against the development environment.
+</p>
+</div>
+<ul class="org-ul">
+<li><a id="org3412023"></a>Note: Add administrative users for the Drupal CMS to your environment before propagate it to other environments.<br />
+<div class="outline-text-5" id="text-org3412023">
+</div>
+</li>
+<li><a id="org0ef6228"></a>Note: Production should <b>always</b> be a tag.  <b>Always</b>.<br />
+<div class="outline-text-5" id="text-org0ef6228">
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org1c25f1d" class="outline-3">
+<h3 id="org1c25f1d">Step 3: Setup development environment.</h3>
+<div class="outline-text-3" id="text-org1c25f1d">
+</div>
+<div id="outline-container-orgd75bfe2" class="outline-4">
+<h4 id="orgd75bfe2">Install Acquia certificate.</h4>
+<div class="outline-text-4" id="text-orgd75bfe2">
+<p>
+Within cloud administration for your account credentials, there is a link to download Drush CLI site aliases.  Download the aliases and run the command to install the <code>.drush</code> and <code>.aquia</code> folders in your home directory.
+</p>
+
+<p>
+Once that is completed <code>cd ~/.drush</code> and locate <b>cloudapi.acquia.com.pem</b>.  Install this certificate
+</p>
+</div>
+</div>
+<div id="outline-container-org012377c" class="outline-4">
+<h4 id="org012377c">Install SSH keys.</h4>
+<div class="outline-text-4" id="text-org012377c">
+<p>
+Use Acquia Cloud administration to install the SSH keys for your local development environment.
+<code>ssh-keygen -t rsa -b 4096 -C "levi.strope@gmail.com"</code>
+</p>
+</div>
+</div>
+<div id="outline-container-orgcd7e538" class="outline-4">
+<h4 id="orgcd7e538">Download and install Acquia Developer Desktop</h4>
+<div class="outline-text-4" id="text-orgcd7e538">
+<ul class="org-ul">
+<li><a href="https://docs.acquia.com/dev-desktop">https://docs.acquia.com/dev-desktop</a></li>
+</ul>
+<p>
+Acquia development is achieved by use of the Acquia Developer Desktop.  This installs all necessary dependencies like MySQL, PHP, and Drupal and keeps these dependencies isolated. Once this tool is installed, configure the preferences with your private SSH key and Acquia Cloud Administrator account.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc16b984" class="outline-4">
+<h4 id="orgc16b984">Use Acquia Developer Desktop to pull down the cloud environment.</h4>
+<div class="outline-text-4" id="text-orgc16b984">
+<p>
+Once the cloud development environment is cloned locally use Drush CLI from there.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org2136bcb" class="outline-3">
+<h3 id="org2136bcb">Step 4: Use Drush CLI for local administration.</h3>
+<div class="outline-text-3" id="text-org2136bcb">
+</div>
+<div id="outline-container-org9b6019c" class="outline-4">
+<h4 id="org9b6019c">Use the development desktop to open the &ldquo;Drush&rdquo; terminal, or execute the equivalent:</h4>
+<div class="outline-text-4" id="text-org9b6019c">
+<div class="org-src-container">
+<pre class="src src-bash"><span class="org-builtin">export</span> <span class="org-variable-name">PHP_ID</span>=php5_5;
+<span class="org-builtin">export</span> <span class="org-variable-name">PATH</span>=<span class="org-string">"/Applications/DevDesktop/</span><span class="org-string"><span class="org-constant">$</span></span><span class="org-string"><span class="org-variable-name">PHP_ID</span></span><span class="org-string">/bin:/Applications/DevDesktop/mysql</span><span class="org-string"><span class="org-hl-fill-column">/</span></span><span class="org-string">bin:/Applications/DevDesktop/tools:</span><span class="org-string"><span class="org-constant">$</span></span><span class="org-string"><span class="org-variable-name">PATH</span></span><span class="org-string">"</span>;
+<span class="org-type">cd</span> <span class="org-string">"/Users/deadbeef/Projects/deadbeef-dev/docroot"</span>;
+</pre>
+</div>
+
+<p>
+To install new plugins, you need to use the Drupal CMS administration to do so.  You gain access to it using <b>Drush ULI</b>.
+</p>
+
+<p>
+Here are a few useful commands you can do with a drush terminal:
+</p>
+<ul class="org-ul">
+<li>use <code>drush uli</code> to obtain a login link to the development drupal instance.</li>
+<li>use <code>drush uli -l http://yourdevinstance.aquia-sites.com</code> to specify which site to generate a link for.</li>
+<li>run <code>drush acquia-update</code> to refresh your local site aliases.</li>
+<li>check the status of your site using <code>drush @dev status</code> where &ldquo;@dev&rdquo; is one of your site aliases.</li>
+<li><code>drush status</code> should reflect the status of your local running site.</li>
+<li>after making changes locally use <code>drush cc all</code> to clear caches and force a refresh of the site code.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5a947dc" class="outline-3">
+<h3 id="org5a947dc">Step 5: Cut a new branch for local development.</h3>
+<div class="outline-text-3" id="text-org5a947dc">
+<p>
+Once your changes are ready push your branch so it is available remotely.
+</p>
+<ul class="org-ul">
+<li><a href="https://docs.acquia.com/acquia-cloud/manage/code">https://docs.acquia.com/acquia-cloud/manage/code</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgab8d689" class="outline-3">
+<h3 id="orgab8d689">Step 6: Use Acquia Cloud management to point the development instance to your branch for validation.</h3>
+<div class="outline-text-3" id="text-orgab8d689">
+<p>
+This will allow you to validate changes on acquia server instance.  Changes can be rolled forward to staging from here.
+</p>
+<ul class="org-ul">
+<li><a href="https://docs.acquia.com/site-factory/tiers/paas/test">https://docs.acquia.com/site-factory/tiers/paas/test</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org67634c2" class="outline-3">
+<h3 id="org67634c2">Step 7: After validation on staging, merge code to master and tag.</h3>
+<div class="outline-text-3" id="text-org67634c2">
+<p>
+Once your changes are ready for the big show, you merge them to master and tag.  This is important, because Acquia assumes <b>master</b> is always ready for production.
+</p>
+
+<p>
+That being said, never deploy master to production direction because any changes made to master will update <b>live</b>.  This is the reason why production should always be deployed from a tag.  Tags are frozen in time and cannot be modified.  It is also good practice, in general, to tag a release.  I do this in all of the production environments that I maintain.
+</p>
+<ul class="org-ul">
+<li><a href="https://docs.acquia.com/site-factory/tiers/paas/test#merging">https://docs.acquia.com/site-factory/tiers/paas/test#merging</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org308704c" class="outline-3">
+<h3 id="org308704c">Step 8: Deploy to production</h3>
+<div class="outline-text-3" id="text-org308704c">
+<ul class="org-ul">
+<li><a href="https://docs.acquia.com/site-factory/tiers/paas/deploy">https://docs.acquia.com/site-factory/tiers/paas/deploy</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="outline-container-org8623980" class="outline-2">
+<h2 id="org8623980">Notes:</h2>
+<div class="outline-text-2" id="text-org8623980">
+</div>
+<div id="outline-container-orgf9fa5cd" class="outline-3">
+<h3 id="orgf9fa5cd">Use acquia desktop to SSH into production environments.</h3>
+<div class="outline-text-3" id="text-orgf9fa5cd">
+<ul class="org-ul">
+<li>If you need to obtain a login to this environment, use drush ULI after SSH.</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<footer id="postamble" class="status">
+<div class='footer'>
+  Copyright © 2020 <a href='mailto:levi.strope@example.com'>Levi Strope.</a><br>
+  Last updated on Oct 14, 2020. Generated using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.4).
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Oct 14, 2020 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Android Studio and React-Native developer setup using Homebrew</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Levi Strope">
+<link rel='icon' type='image/x-icon' href='/images/favicon.ico'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://code.cdn.mozilla.net/fonts/fira.css'>
+<link rel='stylesheet' href='/css/site.css?v=2' type='text/css'/>
+<link rel='stylesheet' href='/css/custom.css' type='text/css'/>
+<link rel='stylesheet' href='/css/syntax-coloring.css' type='text/css'/>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="/"> UP </a>
+ |
+ <a accesskey="H" href="/"> HOME </a>
+</div><header id="top" class="status">
+<div class='intro'>
+  <img src='/images/about/punktocat.gif' alt='Levi Strope' class='no-border'/>
+  <h1>
+    <span class="gray">Levi</span>
+    <span class="gray">Strope</span>
+  </h1>
+  <p>Entropy In Action</p>
+</div>
+
+<div class='nav'>
+<ul>
+<li><a href='/'>Blog</a>.</li>
+<li><a href='/index.xml'>RSS</a>.</li>
+<li><a href='/about/'>Photography</a></li>
+</ul>
+</div>
+</header>
+<main id="content">
+<header>
+<h1 class="title">Android Studio and React-Native developer setup using Homebrew</h1>
+<p class="subtitle">Published on (2017-06-25 Sun) by Levi Strope.</p>
+</header>
+<section id="outline-container-org2c609f3" class="outline-2">
+<h2 id="org2c609f3">Homebrew for everything</h2>
+<div class="outline-text-2" id="text-org2c609f3">
+<p>
+I use homebrew and brew-bundler to manage all my dependencies.  If you are curious how check out my <a href="https://github.com/localredhead/dotfiles_osx/tree/smtx-deltas">osx dotfiles</a>.
+</p>
+
+<p>
+A lot of things had changed since I last setup an android development environment and nearly every blog or stackoverflow or personal note had stale information.
+</p>
+
+<p>
+This is how I got up and running, with consideration to the following changes:
+</p>
+<ul class="org-ul">
+<li>Android SDK is now installed via Cask</li>
+<li>SDK location changed with homebrew install</li>
+<li>The sdk manager and avd manager have new binaries</li>
+<li>The manager binaries have new CLI&rsquo;s</li>
+<li>Android Studio has become a standard</li>
+</ul>
+</div>
+</section>
+
+<section id="outline-container-org89c9951" class="outline-2">
+<h2 id="org89c9951">Pre-requisites</h2>
+<div class="outline-text-2" id="text-org89c9951">
+<p>
+Node dependencies (installed 8.1.2):
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">brew install node
+brew install yarn
+yarn global add n
+n latest
+</pre>
+</div>
+
+<p>
+Android dependencies:
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">brew install ant
+brew install maven
+brew install gradle
+brew cask install android-sdk
+brew cask install android-ndk
+brew cask install intel-haxm
+brew cask install android-platform-tools
+brew cask install android-studio
+</pre>
+</div>
+
+<p>
+React-native dependencies.
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">yarn global add react-native-cli
+yarn global add rnpm
+yarn global add babel-cli
+</pre>
+</div>
+</div>
+</section>
+
+<section id="outline-container-org3c96b6b" class="outline-2">
+<h2 id="org3c96b6b">Configuration</h2>
+<div class="outline-text-2" id="text-org3c96b6b">
+<p>
+Add the following to .bash<sub>profile</sub>
+</p>
+<pre class="example" id="org783ece5">
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+export ANDROID_NDK_HOME=/usr/local/share/android-ndk
+export ANDROID_HOME=/usr/local/share/android-sdk
+export ANT_HOME=/usr/local/opt/ant
+export MAVEN_HOME=/usr/local/opt/maven
+export GRADLE_HOME=/usr/local/opt/gradle
+export PATH=$ANT_HOME/bin:$PATH
+export PATH=$MAVEN_HOME/bin:$PATH
+export PATH=$GRADLE_HOME/bin:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+</pre>
+
+<p>
+After this I started up android studio, and set the path to the android SDK to the proper location.
+<img src="./studio.png" alt="studio.png">
+</p>
+
+<p>
+Now you use the Android Studio SDK Manager to install all SDK&rsquo;s your project needs. Some may choose to use the sdkmanager and avdmanager binaries directly but I think the GUI is easier.
+</p>
+</div>
+</section>
+
+<section id="outline-container-org56a5101" class="outline-2">
+<h2 id="org56a5101">Gotchas</h2>
+<div class="outline-text-2" id="text-org56a5101">
+<p>
+When running <code>react-native run-android</code> I was presented the following error:
+</p>
+
+<pre class="example" id="orgd9c5b1d">
+Error watching file for changes: EMFILE
+{"code":"EMFILE","errno":"EMFILE","syscall":"Error watching file for changes:","filename":null}
+Error: Error watching file for changes: EMFILE
+</pre>
+
+<p>
+I found this <a href="https://github.com/facebook/react-native/issues/10088">Github issue</a> on the react-native repo and resolved it with <code>brew install watchman</code>.
+</p>
+
+<p>
+I hope this helps someone else setup their android and react-native development environment with homebrew.
+</p>
+</div>
+</section>
+</main>
+<footer id="postamble" class="status">
+<div class='footer'>
+  Copyright © 2020 <a href='mailto:levi.strope@example.com'>Levi Strope.</a><br>
+  Last updated on Oct 14, 2020. Generated using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.4).
+</div>
+</footer>
+</body>
+</html>

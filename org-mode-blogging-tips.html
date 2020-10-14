@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- Oct 14, 2020 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tips for blogging with org-mode and EGO</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Levi Strope Levi Strope" />
+<link rel='icon' type='image/x-icon' href='/images/favicon.ico'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://code.cdn.mozilla.net/fonts/fira.css'>
+<link rel='stylesheet' href='/css/site.css?v=2' type='text/css'/>
+<link rel='stylesheet' href='/css/custom.css' type='text/css'/>
+<link rel='stylesheet' href='/css/syntax-coloring.css' type='text/css'/>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="/"> UP </a>
+ |
+ <a accesskey="H" href="/"> HOME </a>
+</div><header id="top" class="status">
+<div class='intro'>
+  <img src='/images/about/punktocat.gif' alt='Levi Strope' class='no-border'/>
+  <h1>
+    <span class="gray">Levi</span>
+    <span class="gray">Strope</span>
+  </h1>
+  <p>Entropy In Action</p>
+</div>
+
+<div class='nav'>
+<ul>
+<li><a href='/'>Blog</a>.</li>
+<li><a href='/index.xml'>RSS</a>.</li>
+<li><a href='/about/'>Photography</a></li>
+</ul>
+</div>
+</header>
+<main id="content">
+<h1 class="title">Tips for blogging with org-mode and EGO
+<br />
+<span class="subtitle">Published on (2016-11-28 Mon) by Levi Strope Levi Strope.</span>
+</h1>
+<p>
+There were a few things that annoyed me with org-mode.  I considered one of them a deal-killer: <span class="underline">all org-mode emphasis characters were exported too</span>.
+</p>
+
+<p>
+These characters wrapped all text that had emphasis, like <b>bold</b>, <span class="underline">underline</span>, <i>italics</i>, <code>code</code>, <del>strike-through</del>.  Each of these still has annoying spacing, but the special characters are gone!
+</p>
+
+<p>
+Before I found a solution I tried everything I could think of; pouring over org-mode manuals and even cracking open the source-code of <a href="https://github.com/emacs-china/EGO">EGO</a>.  No matter what I tried the offending characters would still export to HTML.
+</p>
+
+<p>
+This exercise was not completely fruitless, as I stumpled upon a way to remove them when I realized how emacs and org-mode itself hides the characters.
+</p>
+
+<section id="outline-container-org76e2ceb" class="outline-2">
+<h2 id="org76e2ceb">Pro Tip: <b>Modify the CSS to hide the offending characters.</b></h2>
+<div class="outline-text-2" id="text-org76e2ceb">
+<p>
+For instance, to remove leading stars:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span class="org-css-selector">b:before, b:after, strong:before, strong:after </span>{
+                                    <span class="org-css-property">content</span>: <span class="org-string">"*"</span>;
+                                    <span class="org-css-property">color</span>: var(<span class="org-variable-name">--body-color</span>);
+                                  }
+</pre>
+</div>
+
+<p>
+In the example I am setting the color to be the same as the body color.
+</p>
+
+<p>
+At first I thought this was a smelly hack but I arrived at this solution after turning them off in emacs, which uses this same technique.  I did not think this was clever because the emphasis-characters are still there, but they are not visible so my problem is solved.
+</p>
+</div>
+</section>
+</main>
+<footer id="postamble" class="status">
+<div class='footer'>
+  Copyright © 2020 <a href='mailto:levi.strope@example.com'>Levi Strope.</a><br>
+  Last updated on Oct 14, 2020. Generated using <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="https://orgmode.org">Org</a> mode 9.4).
+</div>
+</footer>
+</body>
+</html>

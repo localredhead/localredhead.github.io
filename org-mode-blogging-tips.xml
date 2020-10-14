@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	   xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	   xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:atom="http://www.w3.org/2005/Atom"
+	   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	   xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	   xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Tips for blogging with org-mode and EGO</title>
+  <atom:link href="https://levistrope.com/org-mode-blogging-tips.xml" rel="self" type="application/rss+xml" />
+  <link>https://levistrope.com/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Wed, 14 Oct 2020 19:49:09 -0400</pubDate>
+  <lastBuildDate>Wed, 14 Oct 2020 19:49:09 -0400</lastBuildDate>
+  <generator>Emacs 26.1 Org-mode 9.4</generator>
+  <webMaster>levi.strope@gmail.com (Levi Strope Levi Strope)</webMaster>
+  <image>
+    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>Tips for blogging with org-mode and EGO</title>
+    <link>https://levistrope.com/</link>
+  </image>
+
+  <p>
+    There were a few things that annoyed me with org-mode.  I considered one of them a deal-killer: <span class="underline">all org-mode emphasis characters were exported too</span>.
+  </p>
+
+  <p>
+    These characters wrapped all text that had emphasis, like <b>bold</b>, <span class="underline">underline</span>, <i>italics</i>, <code>code</code>, <del>strike-through</del>.  Each of these still has annoying spacing, but the special characters are gone!
+  </p>
+
+  <p>
+    Before I found a solution I tried everything I could think of; pouring over org-mode manuals and even cracking open the source-code of <a href="https://github.com/emacs-china/EGO">EGO</a>.  No matter what I tried the offending characters would still export to HTML.
+  </p>
+
+  <p>
+    This exercise was not completely fruitless, as I stumpled upon a way to remove them when I realized how emacs and org-mode itself hides the characters.
+  </p>
+</channel>
+</rss>

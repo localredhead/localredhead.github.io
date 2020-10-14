@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	   xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	   xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:atom="http://www.w3.org/2005/Atom"
+	   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	   xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	   xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Android Studio and React-Native developer setup using Homebrew</title>
+  <atom:link href="https://levistrope.com/android-osx-setup-2017.xml" rel="self" type="application/rss+xml" />
+  <link>https://levistrope.com/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Wed, 14 Oct 2020 19:49:11 -0400</pubDate>
+  <lastBuildDate>Wed, 14 Oct 2020 19:49:11 -0400</lastBuildDate>
+  <generator>Emacs 26.1 Org-mode 9.4</generator>
+  <webMaster>levi.strope@gmail.com (Levi Strope)</webMaster>
+  <image>
+    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>Android Studio and React-Native developer setup using Homebrew</title>
+    <link>https://levistrope.com/</link>
+  </image>
+
+
+  <item>
+    <title>Homebrew for everything</title>
+    <link>https://levistrope.com/android-osx-setup-2017.html#org7282dd1</link>
+    <author>levi.strope@gmail.com (Levi Strope)</author>
+    <guid isPermaLink="false">https://levistrope.com/android-osx-setup-2017.html#org7282dd1</guid>
+    <pubDate>Sun, 04 Oct 2020 18:48:00 -0400</pubDate>
+
+    <description><![CDATA[<p>
+    I use homebrew and brew-bundler to manage all my dependencies.  If you are curious how check out my <a href="https://github.com/localredhead/dotfiles_osx/tree/smtx-deltas">osx dotfiles</a>.
+    </p>
+
+    <p>
+    A lot of things had changed since I last setup an android development environment and nearly every blog or stackoverflow or personal note had stale information.
+    </p>
+
+    <p>
+    This is how I got up and running, with consideration to the following changes:
+    </p>
+    <ul class="org-ul">
+    <li>Android SDK is now installed via Cask</li>
+    <li>SDK location changed with homebrew install</li>
+    <li>The sdk manager and avd manager have new binaries</li>
+    <li>The manager binaries have new CLI's</li>
+    <li>Android Studio has become a standard</li>
+    </ul>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Pre-requisites</title>
+    <link>https://levistrope.com/android-osx-setup-2017.html#orga0f3d85</link>
+    <author>levi.strope@gmail.com (Levi Strope)</author>
+    <guid isPermaLink="false">https://levistrope.com/android-osx-setup-2017.html#orga0f3d85</guid>
+    <pubDate>Sun, 04 Oct 2020 18:48:00 -0400</pubDate>
+
+    <description><![CDATA[<p>
+    Node dependencies (installed 8.1.2):
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-sh">brew install node
+    brew install yarn
+    yarn global add n
+    n latest
+    </pre>
+    </div>
+
+    <p>
+    Android dependencies:
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-sh">brew install ant
+    brew install maven
+    brew install gradle
+    brew cask install android-sdk
+    brew cask install android-ndk
+    brew cask install intel-haxm
+    brew cask install android-platform-tools
+    brew cask install android-studio
+    </pre>
+    </div>
+
+    <p>
+    React-native dependencies.
+    </p>
+    <div class="org-src-container">
+    <pre class="src src-sh">yarn global add react-native-cli
+    yarn global add rnpm
+    yarn global add babel-cli
+    </pre>
+    </div>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Configuration</title>
+    <link>https://levistrope.com/android-osx-setup-2017.html#orgeb0f27e</link>
+    <author>levi.strope@gmail.com (Levi Strope)</author>
+    <guid isPermaLink="false">https://levistrope.com/android-osx-setup-2017.html#orgeb0f27e</guid>
+    <pubDate>Sun, 04 Oct 2020 18:48:00 -0400</pubDate>
+
+    <description><![CDATA[<p>
+    Add the following to .bash<sub>profile</sub>
+    </p>
+    <pre class="example" id="org622883a">
+    export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
+    export ANDROID_NDK_HOME=/usr/local/share/android-ndk
+    export ANDROID_HOME=/usr/local/share/android-sdk
+    export ANT_HOME=/usr/local/opt/ant
+    export MAVEN_HOME=/usr/local/opt/maven
+    export GRADLE_HOME=/usr/local/opt/gradle
+    export PATH=$ANT_HOME/bin:$PATH
+    export PATH=$MAVEN_HOME/bin:$PATH
+    export PATH=$GRADLE_HOME/bin:$PATH
+    export PATH=$ANDROID_HOME/tools:$PATH
+    export PATH=$ANDROID_HOME/platform-tools:$PATH
+    </pre>
+
+    <p>
+    After this I started up android studio, and set the path to the android SDK to the proper location.
+    <img src="./studio.png" alt="studio.png">
+    </p>
+
+    <p>
+    Now you use the Android Studio SDK Manager to install all SDK's your project needs. Some may choose to use the sdkmanager and avdmanager binaries directly but I think the GUI is easier.
+    </p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Gotchas</title>
+    <link>https://levistrope.com/android-osx-setup-2017.html#org1ffe87c</link>
+    <author>levi.strope@gmail.com (Levi Strope)</author>
+    <guid isPermaLink="false">https://levistrope.com/android-osx-setup-2017.html#org1ffe87c</guid>
+    <pubDate>Sun, 04 Oct 2020 18:48:00 -0400</pubDate>
+
+    <description><![CDATA[<p>
+    When running <code>react-native run-android</code> I was presented the following error:
+    </p>
+
+    <pre class="example" id="org2e774fe">
+    Error watching file for changes: EMFILE
+    {"code":"EMFILE","errno":"EMFILE","syscall":"Error watching file for changes:","filename":null}
+    Error: Error watching file for changes: EMFILE
+    </pre>
+
+    <p>
+    I found this <a href="https://github.com/facebook/react-native/issues/10088">Github issue</a> on the react-native repo and resolved it with <code>brew install watchman</code>.
+    </p>
+
+    <p>
+    I hope this helps someone else setup their android and react-native development environment with homebrew.
+    </p>
+    ]]></description>
+  </item>
+</channel>
+</rss>

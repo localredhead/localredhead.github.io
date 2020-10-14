@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	   xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	   xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:atom="http://www.w3.org/2005/Atom"
+	   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	   xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	   xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>10 reasons why vanilla is the best flavor</title>
+  <atom:link href="https://levistrope.com/vanilla.xml" rel="self" type="application/rss+xml" />
+  <link>https://levistrope.com/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Wed, 14 Oct 2020 19:49:08 -0400</pubDate>
+  <lastBuildDate>Wed, 14 Oct 2020 19:49:08 -0400</lastBuildDate>
+  <generator>Emacs 26.1 Org-mode 9.4</generator>
+  <webMaster>levi.strope@gmail.com (Levi Strope)</webMaster>
+  <image>
+    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>10 reasons why vanilla is the best flavor</title>
+    <link>https://levistrope.com/</link>
+  </image>
+
+
+  <item>
+    <title>Vanilla is the best flavor</title>
+    <link>https://levistrope.com/vanilla.html#org3ede403</link>
+    <author>levi.strope@gmail.com (Levi Strope)</author>
+    <guid isPermaLink="false">https://levistrope.com/vanilla.html#org3ede403</guid>
+    <pubDate>Sun, 04 Oct 2020 18:48:00 -0400</pubDate>
+
+    <description><![CDATA[<div id="outline-container-org7d99264" class="outline-3">
+    <h3 id="org7d99264">Tldr; There aren&rsquo;t 10 reasons.</h3>
+    <div class="outline-text-3" id="text-org7d99264">
+    <p>
+    Just Use the defaults to their fullest.
+    </p>
+
+    <p>
+    If you cover everything with chocolate and sprinkles, how will you notice the sublime flavor of a good vanilla ice-cream?
+    </p>
+    </div>
+    </div>
+    <div id="outline-container-org4af6101" class="outline-3">
+    <h3 id="org4af6101">Design intent</h3>
+    <div class="outline-text-3" id="text-org4af6101">
+    <p>
+    As with vanilla as a flavor, design intent is often overlooked or taken for granted.  Even though it touches nearly every piece of a product from ideation to creation.
+    </p>
+
+    <p>
+    Architecture?
+    </p>
+
+    <p>
+    Design.
+    </p>
+
+    <p>
+    Writing?
+    </p>
+
+    <p>
+    Design.
+    </p>
+
+    <p>
+    Branding, Marketing?
+    </p>
+
+    <p>
+    DESIGN!
+    </p>
+
+    <p>
+    In software, there&rsquo;s design (and turtles) all the way down and that&rsquo;s where I&rsquo;ll be writing from.
+    </p>
+    </div>
+    </div>
+    <div id="outline-container-org13f7fcc" class="outline-3">
+    <h3 id="org13f7fcc">The joy of a good experience</h3>
+    <div class="outline-text-3" id="text-org13f7fcc">
+    <p>
+    Even with you&rsquo;re food, someone designed the flavor.
+    </p>
+
+    <p>
+    The difference between liking something versus adoring it has a lot to do with design and empathy for the users of it.
+    </p>
+
+    <p>
+    So why do people see it upon themselves to subvert the intent of a designer by customizing the experience to their own desires?
+    </p>
+
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Always be tuning</p>&mdash; Levi Strope (@localredhead) <a href="https://twitter.com/localredhead/status/1316365104385077248?ref_src=twsrc%5Etfw">October 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <div id="outline-container-orgb8c0c38" class="outline-4">
+    <h4 id="orgb8c0c38">Exactly.</h4>
+    <div class="outline-text-4" id="text-orgb8c0c38">
+    <p>
+    It&rsquo;s not always bad design.
+    </p>
+
+    <p>
+    As a tinkerer myself I think it&rsquo;s an inherent need to always be tuning.  By allowing myself to think this way it&rsquo;s possible to dilute the intent of the designer.  Someone who thought about the problem space I&rsquo;m stepping on at a deeper level.
+    </p>
+
+    <p>
+    A good example is personal computing. It could be as simple as changing the desktop(linux), adding custom widgets, etc.  In my experience these are cute and make me feel cool, but usually &ldquo;cute&rdquo; slows things down over time.
+    </p>
+    </div>
+    </div>
+    </div>
+    <div id="outline-container-orga41c6a6" class="outline-3">
+    <h3 id="orga41c6a6">Entropy</h3>
+    <div class="outline-text-3" id="text-orga41c6a6">
+    <p>
+    With every change an opportunity for entropy presents itself.  Eventually these modifications accumulate and diminish the will of the designer.  Or dilute the flavor, if you&rsquo;re still following the analogy from before.
+    </p>
+
+    <p>
+    In my case, I find myself maintaining a lot of extra things that don&rsquo;t come packaged by default.  I may not be aware that suitable defaults exist!
+    </p>
+
+    <p>
+    A younger me would respond with &ldquo;be you&rsquo;re own designer&rdquo;.  I find the task of design both fulfilling and incredibly difficult.   For myself it shall always be a hobby and I would tell my younger self:
+    </p>
+
+    <blockquote>
+    <p>
+    Settle into my ways of working smarter, not harder.
+    </p>
+    </blockquote>
+
+    <p>
+    I&rsquo;ve had a mentor or three say this to me over the years.  Stubborn is one adjective I can safely brandish.  Hopefully this post will serve as a reminder to my future self.
+    </p>
+    </div>
+    </div>
+    <div id="outline-container-org65ae7f8" class="outline-3">
+    <h3 id="org65ae7f8">Beat Entropy</h3>
+    <div class="outline-text-3" id="text-org65ae7f8">
+    <p>
+    The way to beat entropy is to not contribute to it in this case.
+    </p>
+
+    <p>
+    Sticking with the defaults and being sure to utilize them to their fullest is the best for 90% of situations.
+    </p>
+
+    <p>
+    Most times following the path that was already paved is the pragmatic choice to save time, energy and maximize productivity.
+    </p>
+    </div>
+    </div>
+    <div id="outline-container-orgaa3c81a" class="outline-3">
+    <h3 id="orgaa3c81a">Is this a case for mediocraty?</h3>
+    <div class="outline-text-3" id="text-orgaa3c81a">
+    <p>
+    It could be.  In some cases the grass is greener.  But don&rsquo;t simply assume it is before checking first and be mindful how much time you spend &ldquo;checking&rdquo; ;)
+    </p>
+
+    <p>
+    What are the trade-offs?
+    </p>
+    </div>
+    </div>
+    <div id="outline-container-org7109e7f" class="outline-3">
+    <h3 id="org7109e7f">It&rsquo;s a case for keeping it simple.</h3>
+    <div class="outline-text-3" id="text-org7109e7f">
+    <p>
+    The tinkerer&rsquo;s out there will think this frame of thought is boring.  There is a lot to learn when diverging away from the intent of the design.  <b><b>Diverging</b></b> is healthy, at times.  I learn a lot when I do but the purpose of this learning should be to <b><b>converge</b></b> and apply those lessons.  If what I&rsquo;m learning isn&rsquo;t moving the needle I try to consider if there may be more productive ways to spend time.  I only have so much to give.
+    </p>
+
+    <p>
+    As with anything, strict dogma to any one frame of thought would be unhealthy so I allow my self the freedom to geek out and explore once in a while, but considerably less than my younger years.
+    </p>
+
+    <p>
+    I&rsquo;m applying my lessons learned, and converging back to simplicity.
+    </p>
+    </div>
+    </div>
+    ]]></description>
+</item>
+</channel>
+</rss>

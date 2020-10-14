@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	   xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	   xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	   xmlns:dc="http://purl.org/dc/elements/1.1/"
+	   xmlns:atom="http://www.w3.org/2005/Atom"
+	   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	   xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	   xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Blog Index</title>
+  <atom:link href="https://levistrope.com/index.xml" rel="self" type="application/rss+xml" />
+  <link>https://levistrope.com/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Wed, 14 Oct 2020 19:49:07 -0400</pubDate>
+  <lastBuildDate>Wed, 14 Oct 2020 19:49:07 -0400</lastBuildDate>
+  <generator>Emacs 26.1 Org-mode 9.4</generator>
+  <webMaster>levi.strope@gmail.com (Levi Strope)</webMaster>
+  <image>
+    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>Blog Index</title>
+    <link>https://levistrope.com/</link>
+  </image>
+
+  <ul class="org-ul">
+    <li><p>
+      <b><a href="vanilla.html">10 reasons why vanilla is the best flavor</a></b>
+    </p>
+    <p class='pubdate'>by Levi Strope on Oct 01, 2020.</p></li>
+    <li><p>
+      <b><a href="ego.html">Switching from Middleman to EGO for static-site generation</a></b>
+    </p>
+    <p class='pubdate'>by Levi Strope on Sep 30, 2020.</p></li>
+    <li><p>
+      <b><a href="android-osx-setup-2017.html">Android Studio and React-Native developer setup using Homebrew</a></b>
+    </p>
+    <p class='pubdate'>by Levi Strope on Sep 22, 2020.</p></li>
+    <li><p>
+      <b><a href="acquia.html">How to administer and deploy Acquia cloud environments</a></b>
+    </p>
+    <p class='pubdate'>by Levi Strope on Sep 22, 2020.</p></li>
+    <li><p>
+      <b><a href="org-mode-blogging-tips.html">Tips for blogging with org-mode and EGO</a></b>
+    </p>
+    <p class='pubdate'>by Levi Strope Levi Strope on Sep 22, 2020.</p></li>
+  </ul>
+</channel>
+</rss>
