@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"
 	   xmlns:content="http://purl.org/rss/1.0/modules/content/"
 	   xmlns:wfw="http://wellformedweb.org/CommentAPI/"
@@ -17,8 +16,8 @@
   <link>https://levistrope.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Wed, 14 Oct 2020 19:49:07 -0400</pubDate>
-  <lastBuildDate>Wed, 14 Oct 2020 19:49:07 -0400</lastBuildDate>
+  <pubDate>Wed, 14 Oct 2020 20:18:37 -0400</pubDate>
+  <lastBuildDate>Wed, 14 Oct 2020 20:18:37 -0400</lastBuildDate>
   <generator>Emacs 26.1 Org-mode 9.4</generator>
   <webMaster>levi.strope@gmail.com (Levi Strope)</webMaster>
   <image>
