@@ -1,0 +1,12 @@
+#+TITLE: Blog Index
+
+- *[[file:vanilla.org][10 reasons why vanilla is the best flavor]]*
+  #+html: <p class='pubdate'>by Levi Strope on Oct 01, 2020.</p>
+- *[[file:ego.org][Switching from Middleman to EGO for static-site generation]]*
+  #+html: <p class='pubdate'>by Levi Strope on Sep 30, 2020.</p>
+- *[[file:android-osx-setup-2017.org][Android Studio and React-Native developer setup using Homebrew]]*
+  #+html: <p class='pubdate'>by Levi Strope on Sep 22, 2020.</p>
+- *[[file:acquia.org][How to administer and deploy Acquia cloud environments]]*
+  #+html: <p class='pubdate'>by Levi Strope on Sep 22, 2020.</p>
+- *[[file:org-mode-blogging-tips.org][Tips for blogging with org-mode and EGO]]*
+  #+html: <p class='pubdate'>by Levi Strope Levi Strope on Sep 22, 2020.</p>
