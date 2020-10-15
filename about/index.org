@@ -1,3 +1,4 @@
+#+title: Instagram
 #+setupfile: ../org-templates/post.org
 #+BEGIN_EXPORT html
 <!-- SnapWidget -->
