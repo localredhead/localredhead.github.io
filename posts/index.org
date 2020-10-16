@@ -1,5 +1,7 @@
 #+TITLE: Blog Index
 
+- *[[file:pensive.org][Scooter looking pensive]]*
+  #+html: <p class='pubdate'>by Levi Strope on Oct 16, 2020.</p>
 - *[[file:vanilla.org][10 reasons why vanilla is the best flavor]]*
   #+html: <p class='pubdate'>by Levi Strope on Oct 01, 2020.</p>
 - *[[file:ego.org][Switching from Middleman to EGO for static-site generation]]*
