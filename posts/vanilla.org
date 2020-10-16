@@ -13,9 +13,8 @@
 :PROPERTIES:
 :ID:       f879276d-bab5-4872-9761-1271e3f3af44
 :END:
-Just Use the defaults to their fullest.
+Use the defaults to their fullest.
 
-If you cover everything with chocolate and sprinkles, how will you notice the sublime flavor of a good vanilla ice-cream?
 ** Design intent
 :PROPERTIES:
 :ID:       c2e6d091-b502-4aba-8275-2d1a5a0064a0
@@ -35,15 +34,11 @@ Branding, Marketing?
 DESIGN!
 
 In software, there's design (and turtles) all the way down and that's where I'll be writing from.
-** The joy of a good experience
+** Changing the defaults
 :PROPERTIES:
 :ID:       8d2db6fd-73d3-40af-b142-e700c9d9f8f5
 :END:
-Even with you're food, someone designed the flavor.
-
-The difference between liking something versus adoring it has a lot to do with design and empathy for the users of it.
-
-So why do people see it upon themselves to subvert the intent of a designer by customizing the experience to their own desires?
+Why do people see it upon themselves to subvert the intent of a designer by customizing the experience to their own desires?
 
 #+BEGIN_EXPORT html
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Always be tuning</p>&mdash; Levi Strope (@localredhead) <a href="https://twitter.com/localredhead/status/1316365104385077248?ref_src=twsrc%5Etfw">October 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -63,17 +58,15 @@ A good example is personal computing. It could be as simple as changing the desk
 :PROPERTIES:
 :ID:       2a03d573-e9a2-4c2e-8dba-473f22b26c69
 :END:
-With every change an opportunity for entropy presents itself.  Eventually these modifications accumulate and diminish the will of the designer.  Or dilute the flavor, if you're still following the analogy from before.
+Eventually these modifications accumulate and diminish the designed experience.  Or dilute the flavor, if you're still following the analogy from before.
 
 In my case, I find myself maintaining a lot of extra things that don't come packaged by default.  I may not be aware that suitable defaults exist!
-
-A younger me would respond with "be you're own designer".  I find the task of design both fulfilling and incredibly difficult.   For myself it shall always be a hobby and I would tell my younger self:
 
 #+BEGIN_QUOTE
 Settle into my ways of working smarter, not harder.
 #+END_QUOTE
 
-I've had a mentor or three say this to me over the years.  Stubborn is one adjective I can safely brandish.  Hopefully this post will serve as a reminder to my future self.
+I've had a mentor or three say this to me over the years.  Stubborn is one adjective I can safely brandish.  Hopefully this post will serve as a reminder to my future self that sticking with the defaults may indeed be the smarter option.
 ** Beat Entropy
 :PROPERTIES:
 :ID:       452dd5a1-0ee8-4e3a-8153-9ab960587ee3
@@ -98,4 +91,4 @@ The tinkerer's out there will think this frame of thought is boring.  There is a
 
 As with anything, strict dogma to any one frame of thought would be unhealthy so I allow my self the freedom to geek out and explore once in a while, but considerably less than my younger years.
 
-I'm applying my lessons learned, and converging back to simplicity.
+I'm applying my lessons learned, and converging back to _simplicity_.
