@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"
 	   xmlns:content="http://purl.org/rss/1.0/modules/content/"
 	   xmlns:wfw="http://wellformedweb.org/CommentAPI/"
@@ -17,8 +16,8 @@
   <link>https://levistrope.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Wed, 14 Oct 2020 19:49:08 -0400</pubDate>
-  <lastBuildDate>Wed, 14 Oct 2020 19:49:08 -0400</lastBuildDate>
+  <pubDate>Thu, 15 Oct 2020 19:58:02 -0400</pubDate>
+  <lastBuildDate>Thu, 15 Oct 2020 19:58:02 -0400</lastBuildDate>
   <generator>Emacs 26.1 Org-mode 9.4</generator>
   <webMaster>levi.strope@gmail.com (Levi Strope)</webMaster>
   <image>
@@ -39,14 +38,11 @@
     <h3 id="org7d99264">Tldr; There aren&rsquo;t 10 reasons.</h3>
     <div class="outline-text-3" id="text-org7d99264">
     <p>
-    Just Use the defaults to their fullest.
+    Use the defaults to their fullest.
     </p>
+    </div>
+    </div>
 
-    <p>
-    If you cover everything with chocolate and sprinkles, how will you notice the sublime flavor of a good vanilla ice-cream?
-    </p>
-    </div>
-    </div>
     <div id="outline-container-org4af6101" class="outline-3">
     <h3 id="org4af6101">Design intent</h3>
     <div class="outline-text-3" id="text-org4af6101">
@@ -83,19 +79,11 @@
     </p>
     </div>
     </div>
-    <div id="outline-container-org13f7fcc" class="outline-3">
-    <h3 id="org13f7fcc">The joy of a good experience</h3>
-    <div class="outline-text-3" id="text-org13f7fcc">
+    <div id="outline-container-orgfb77a7d" class="outline-3">
+    <h3 id="orgfb77a7d">Changing the defaults</h3>
+    <div class="outline-text-3" id="text-orgfb77a7d">
     <p>
-    Even with you&rsquo;re food, someone designed the flavor.
-    </p>
-
-    <p>
-    The difference between liking something versus adoring it has a lot to do with design and empathy for the users of it.
-    </p>
-
-    <p>
-    So why do people see it upon themselves to subvert the intent of a designer by customizing the experience to their own desires?
+    Why do people see it upon themselves to subvert the intent of a designer by customizing the experience to their own desires?
     </p>
 
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Always be tuning</p>&mdash; Levi Strope (@localredhead) <a href="https://twitter.com/localredhead/status/1316365104385077248?ref_src=twsrc%5Etfw">October 14, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -122,15 +110,11 @@
     <h3 id="orga41c6a6">Entropy</h3>
     <div class="outline-text-3" id="text-orga41c6a6">
     <p>
-    With every change an opportunity for entropy presents itself.  Eventually these modifications accumulate and diminish the will of the designer.  Or dilute the flavor, if you&rsquo;re still following the analogy from before.
+    Eventually these modifications accumulate and diminish the designed experience.  Or dilute the flavor, if you&rsquo;re still following the analogy from before.
     </p>
 
     <p>
     In my case, I find myself maintaining a lot of extra things that don&rsquo;t come packaged by default.  I may not be aware that suitable defaults exist!
-    </p>
-
-    <p>
-    A younger me would respond with &ldquo;be you&rsquo;re own designer&rdquo;.  I find the task of design both fulfilling and incredibly difficult.   For myself it shall always be a hobby and I would tell my younger self:
     </p>
 
     <blockquote>
@@ -140,7 +124,7 @@
     </blockquote>
 
     <p>
-    I&rsquo;ve had a mentor or three say this to me over the years.  Stubborn is one adjective I can safely brandish.  Hopefully this post will serve as a reminder to my future self.
+    I&rsquo;ve had a mentor or three say this to me over the years.  Stubborn is one adjective I can safely brandish.  Hopefully this post will serve as a reminder to my future self that sticking with the defaults may indeed be the smarter option.
     </p>
     </div>
     </div>
