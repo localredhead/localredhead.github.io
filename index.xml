@@ -11,22 +11,30 @@
 	   xmlns:georss="http://www.georss.org/georss"
      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:media="http://search.yahoo.com/mrss/"><channel>
-  <title>Blog Index</title>
+  <title></title>
   <atom:link href="https://levistrope.com/index.xml" rel="self" type="application/rss+xml" />
   <link>https://levistrope.com/</link>
   <description><![CDATA[]]></description>
   <language>en</language>
-  <pubDate>Thu, 15 Oct 2020 19:58:02 -0400</pubDate>
-  <lastBuildDate>Thu, 15 Oct 2020 19:58:02 -0400</lastBuildDate>
+  <pubDate>Thu, 26 Nov 2020 19:59:47 -0500</pubDate>
+  <lastBuildDate>Thu, 26 Nov 2020 19:59:47 -0500</lastBuildDate>
   <generator>Emacs 26.1 Org-mode 9.4</generator>
   <webMaster>levi.strope@gmail.com (Levi Strope)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
-    <title>Blog Index</title>
+    <title></title>
     <link>https://levistrope.com/</link>
   </image>
 
   <ul class="org-ul">
+    <li><p>
+      <b><a href="hard-founding.html">Founding is hard.   Founding without co-founders is harder.</a></b>
+    </p>
+    <p class='pubdate'>by Levi Strope on Nov 25, 2020.</p></li>
+    <li><p>
+      <b><a href="pensive.html">Scooter looking pensive</a></b>
+    </p>
+    <p class='pubdate'>by Levi Strope on Oct 16, 2020.</p></li>
     <li><p>
       <b><a href="vanilla.html">10 reasons why vanilla is the best flavor</a></b>
     </p>
