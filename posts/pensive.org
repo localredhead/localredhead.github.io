@@ -6,6 +6,10 @@
 
 
 * Photography blog?
+:PROPERTIES:
+:ID:       3c28dbff-ecd2-4c40-917b-373fd0e460e3
+:PUBDATE:  <2020-10-20 Tue 17:58>
+:END:
 I'll post pictures instead of prose sometimes
 
 Here's one I'd like to showcase:
@@ -14,6 +18,10 @@ Here's one I'd like to showcase:
 #+END_EXPORT
 
 * What are you're thoughts?
+:PROPERTIES:
+:ID:       2d5c317b-fbcc-489f-850c-d9e2719bfe0a
+:PUBDATE:  <2020-10-20 Tue 17:58>
+:END:
 #+BEGIN_EXPORT html
 <div class="or-email-form" style="background-color: none; padding: 32px 16px;"><form method="get" action="https://form.sy/api/form_submit/Z_4IoGaz8">
     <table cellpadding="5" cellspacing="0" style="border-collapse: collapse; max-width: 40rem; width: 100%;">

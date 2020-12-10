@@ -1,0 +1,59 @@
+#+title:  Founding is hard.   Founding without co-founders is harder.
+#+date: <2020-11-25>
+#+keywords: draft
+#+exclude_tags: noexport
+#+setupfile: ../org-templates/post.org
+
+
+* Co-founders are key to my success
+:PROPERTIES:
+:ID:       6c267eff-c7aa-4778-aeea-e07ab836eb0d
+:PUBDATE:  <2020-11-25 Wed 16:31>
+:END:
+** Founding is lonely
+:PROPERTIES:
+:ID:       1f90089f-8fb8-4569-bb90-af53775891df
+:END:
+I'm a seasoned remote team leader, facilitator, etc.  Remote is my thing, but as a first time founder during a pandemic, staking a new venture feels other-worldly.
+
+Founding feels isolated already.  But because of the pandemic I have been isolated from friends and family that don't understand the risk I'm taking, and because we're fully remote I'm always isolated from the only people who do understand.  My co-founders!
+
+I should use the word isolated more carefully here but, what I mean by that is no in-person contact.
+
+My co-founders and myself communicate constantly!  There's no argument.  Without them I would probably loose touch with reality.  With a pandemic this is for many reasons but with founding being as lonely as it is, I can't imagine what it would feel like without my partners.
+
+** Moral & Social support
+:PROPERTIES:
+:ID:       b6f83b4d-3c36-4ad3-b407-f01bc3c26b77
+:END:
+I mentioned it before, how friends and family don't understand.  How could they really?
+
+Trying to start a company is incredibly risky and it is not something everyone close to me understands intuitively.  When developing a product in a world that they are only users of, it's hard to explain the complex nuances of what I'm working on in a way that relates to or diminishes the risk I'm taking in their eyes.
+
+This is why I feel having co-founders is crucial.  Moral and social support from those who understand or have skin in the game too should not be overlooked!  I often find myself reading super-person accounts of solo-founders "crushing it" and wondering how they do it.  I still wonder.
+
+** Network, Network, Network!
+:PROPERTIES:
+:ID:       b4e358f3-4f57-4904-901a-88c241f05ef4
+:END:
+How big is your network?
+
+My network is greater than 3x my own due to the addition of my co-founders.  Having a strong network as a founder is crucial!  In aggregate we have a rolodex that is hard to beat.
+
+So far we've tapped our networks directly for:
+- Recruitment
+- Advice
+- Lead Generation
+
+The list continues to grow.  Another thing I find hard to imagine is what it would be like without each of us having a solid network.  Certainly just my own would not suffice, and not to brag but my network is *stellar* IMHO.
+
+** Share bandwidth
+:PROPERTIES:
+:ID:       c4115977-602d-4c19-b038-dcb5071e440f
+:END:
+Eventually you'll have to enlist the help of others.  It is impossible to do everything alone.  Having co-founders makes it that much easier to divide and conquer the vastness of entrepeneurship.
+
+Again this is another area where I find it hard to imagine success without the bandwidth of my co-founders brought to arms.  While someone is focuses on lead generation another can be recruiting, etc.
+
+I look forward to looking back on this blog and reminiscing with my partners about all the trials we worked through together.  I can't imagine I'll get there alone.
+
